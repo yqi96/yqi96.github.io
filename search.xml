@@ -4,6 +4,35 @@
   
     
     <entry>
+      <title>InceptionConv</title>
+      <link href="posts/9bf2951e.html"/>
+      <url>posts/9bf2951e.html</url>
+      
+        <content type="html"><![CDATA[<h3 id="《Inception-Convolution-with-Efficient-Dilation-Search》"><a href="#《Inception-Convolution-with-Efficient-Dilation-Search》" class="headerlink" title="《Inception Convolution with Efficient Dilation Search》"></a>《<a href="https://arxiv.org/pdf/2012.13587.pdf">Inception Convolution with Efficient Dilation Search</a>》</h3><a id="more"></a><p>讲的感受野的故事，结构上就是一个不同分支用不同扩展卷积的Inception块，加上一点网络结构搜索（其实看起来更像剪枝）。</p><p><img src="/posts/9bf2951e/IC-Conv.png"></p>]]></content>
+      
+      
+      <categories>
+          
+          <category> Paper </category>
+          
+      </categories>
+      
+      
+        <tags>
+            
+            <tag> CVPR </tag>
+            
+            <tag> detection </tag>
+            
+            <tag> backbone </tag>
+            
+        </tags>
+      
+    </entry>
+    
+    
+    
+    <entry>
       <title>多卡训练时非tensor输入</title>
       <link href="posts/5a33d4b6.html"/>
       <url>posts/5a33d4b6.html</url>
