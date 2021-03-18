@@ -8,7 +8,7 @@ tags:
 abbrlink: edc10435
 date: 2018-09-08 00:00:00
 ---
-<script type="text/javascript" src="http://cdn.mathjax.org/mathjax/latest/MathJax.js?config=default"></script>
+<script type="text/javascript" src="https://cdn.jsdelivr.net/npm/mathjax@3/es5/tex-svg.js?config=default"></script>
 
 ### 《[Sparsely Aggregated Convolutional Networks](https://openaccess.thecvf.com/content_ECCV_2018/papers/Ligeng_Zhu_Sparsely_Aggregated_Convolutional_ECCV_2018_paper.pdf)》
 
