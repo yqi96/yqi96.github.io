@@ -21,12 +21,14 @@ date: 2020-10-16 00:22:01
   rm -rf scaffolds
   git clone git@github.com:yqi96/yqi96.github.io.git ./tmp
   cp -r tmp/.* . && rm -rf tmp
+  git submodule update --init --recursive
+  cp _themeconfig.yml themes/maupassant/_config.yml
   ```
 
 ### 主题
 
   ```sh
-  git clone https://github.com/tufu9441/maupassant-hexo.git themes/maupassant
+  # git clone https://github.com/tufu9441/maupassant-hexo.git themes/maupassant
   npm install hexo-renderer-pug --save
   npm install hexo-renderer-sass --save
   ```
