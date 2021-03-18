@@ -1,0 +1,3 @@
+[submodule "themesmaupassant"]
+	path = themesmaupassant
+	url = https://github.com/tufu9441/maupassant-hexo.git
