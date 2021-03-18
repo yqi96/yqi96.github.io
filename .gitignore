@@ -7,7 +7,6 @@ public/
 .deploy*/
 themes/
 
-
 package.json
 package-lock.json
 _config.landscape.yml
