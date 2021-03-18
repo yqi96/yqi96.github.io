@@ -15,6 +15,14 @@ date: 2020-10-16 00:22:01
   npm install hexo-deployer-git --save
   ```
 
+### 克隆source文件
+  ```sh
+  rm -rf source
+  rm -rf scaffolds
+  git clone git@github.com:yqi96/yqi96.github.io.git ./tmp
+  cp -r tmp/.* . && rm -rf tmp
+  ```
+
 ### 主题
 
   ```sh
