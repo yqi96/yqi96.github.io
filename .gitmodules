@@ -1,6 +1,0 @@
-[submodule "themes/maupassant"]
-	path = themes/maupassant
-	url = https://github.com/tufu9441/maupassant-hexo.git
-[submodule "themes/kael"]
-	path = themes/kael
-	url = https://github.com/yuche/hexo-theme-kael.git
