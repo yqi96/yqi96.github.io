@@ -1,5 +1,5 @@
 ---
-title: 开放世界目标检测
+title: Towards Open World Object Detection
 categories: Paper
 tags:
   - CVPR
