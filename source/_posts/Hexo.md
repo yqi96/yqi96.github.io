@@ -22,7 +22,7 @@ date: 2020-10-16 00:22:01
   git clone git@github.com:yqi96/yqi96.github.io.git ./tmp
   cp -r tmp/.* . && rm -rf tmp
   git submodule update --init --recursive
-  cp _themeconfig.yml themes/maupassant/_config.yml
+  cp _config.maupassant.yml themes/maupassant/_config.yml
   ```
 
 ### 主题
