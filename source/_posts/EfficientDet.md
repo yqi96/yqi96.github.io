@@ -26,17 +26,14 @@ date: 2020-8-27 15:12:47
 
 - [EfficientNet](http://blinging.xyz/posts/a8875d51.html)
 
-### BibTeX
-```
-@INPROCEEDINGS{efficientdet,
-  author={M. {Tan} and R. {Pang} and Q. V. {Le}},
-  booktitle={Conference on Computer Vision and Pattern Recognition}, 
-  title={EfficientDet: Scalable and Efficient Object Detection}, 
-  year={2020},
-  pages={10778-10787},
-  pdf={https://openaccess.thecvf.com/content_CVPR_2020/papers/Tan_EfficientDet_Scalable_and_Efficient_Object_Detection_CVPR_2020_paper.pdf}
-}
-```
+
+>@INPROCEEDINGS{efficientdet,
+>  author={M. {Tan} and R. {Pang} and Q. V. {Le}},
+>  booktitle={Conference on Computer Vision and Pattern Recognition}, 
+>  title={EfficientDet: Scalable and Efficient Object Detection}, 
+>  year={2020},
+>  pages={10778-10787},
+>  pdf={`https://openaccess.thecvf.com/content_CVPR_2020/papers/Tan_EfficientDet_Scalable_and_Efficient_Object_Detection_CVPR_2020_paper.pdf`}}
 
 ---
 

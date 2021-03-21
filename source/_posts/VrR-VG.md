@@ -41,16 +41,12 @@ date: 2019-11-06 13:32:11
   - Visual Discriminator: VD-Net通过坐标、类别、词汇等非视觉信息来预测关系
   - 用VD-Net无法准确预测的关系标签来训练视觉感知模型并用于VQA等任务
 
-### BibTeX
-```
-@INPROCEEDINGS{vrrvg,
-  author={Y. {Liang} and Y. {Bai} and W. {Zhang} and X. {Qian} and L. {Zhu} and T. {Mei}},
-  booktitle={International Conference on Computer Vision}, 
-  title={VrR-VG: Refocusing Visually-Relevant Relationships}, 
-  year={2019},
-  pages={10402-10411},
-  pdf={http://openaccess.thecvf.com/content_ICCV_2019/papers/Liang_VrR-VG_Refocusing_Visually-Relevant_Relationships_ICCV_2019_paper.pdf}
-}
-```
+>@INPROCEEDINGS{vrrvg,
+>  author={Y. {Liang} and Y. {Bai} and W. {Zhang} and X. {Qian} and L. {Zhu} and T. {Mei}},
+>  booktitle={International Conference on Computer Vision}, 
+>  title={VrR-VG: Refocusing Visually-Relevant Relationships}, 
+>  year={2019},
+>  pages={10402-10411},
+>  pdf={`http://openaccess.thecvf.com/content_ICCV_2019/papers/Liang_VrR-VG_Refocusing_Visually-Relevant_Relationships_ICCV_2019_paper.pdf`}}
 
 ---

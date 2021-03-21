@@ -30,16 +30,12 @@ date: 2020-10-21 12:03:42
 - 《[Convolutional networks on graphs for learning molecular fingerprints](https://papers.nips.cc/paper/5954-convolutional-networks-on-graphs-for-learning-molecular-fingerprints.pdf)》
 - 《[Diffusion-convolutional neural networks](https://papers.nips.cc/paper/6212-diffusion-convolutional-neural-networks.pdf)》
 
-### BibTeX
-```
-@INPROCEEDINGS{prnn,
-  author={P. {Zhou} and M. {Chi}},
-  booktitle={International Conference on Computer Vision}, 
-  title={Relation Parsing Neural Network for Human-Object Interaction Detection}, 
-  year={2019},
-  pages={843-851},
-  pdf={http://openaccess.thecvf.com/content_ICCV_2019/papers/Zhou_Relation_Parsing_Neural_Network_for_Human-Object_Interaction_Detection_ICCV_2019_paper.pdf}
-}
-```
+>@INPROCEEDINGS{prnn,
+>  author={P. {Zhou} and M. {Chi}},
+>  booktitle={International Conference on Computer Vision}, 
+>  title={Relation Parsing Neural Network for Human-Object Interaction Detection}, 
+>  year={2019},
+>  pages={843-851},
+>  pdf={`http://openaccess.thecvf.com/content_ICCV_2019/papers/Zhou_Relation_Parsing_Neural_Network_for_Human-Object_Interaction_Dete>ction_ICCV_2019_paper.pdf`}}
 
 ---

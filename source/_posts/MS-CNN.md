@@ -22,17 +22,14 @@ date: 2019-11-09 12:03:02
 
 ![Object detection sub-network](DET.png)
 
-### BibTeX
-```
-@InProceedings{mscnn,
-  author={Cai, Zhaowei and Fan, Quanfu and Feris, Rogerio S. and Vasconcelos, Nuno},
-  title={A Unified Multi-scale Deep Convolutional Neural Network for Fast Object Detection},
-  booktitle={European Conference on Computer Vision},
-  year={2016},
-  pages={354--370},
-  pdf={https://arxiv.org/pdf/1607.07155.pdf}
-}
-```
+
+>@InProceedings{mscnn,
+>  author={Cai, Zhaowei and Fan, Quanfu and Feris, Rogerio S. and Vasconcelos, Nuno},
+>  title={A Unified Multi-scale Deep Convolutional Neural Network for Fast Object Detection},
+>  booktitle={European Conference on Computer Vision},
+>  year={2016},
+>  pages={354--370},
+>  pdf={`https://arxiv.org/pdf/1607.07155.pdf`}}
 
 ---
 

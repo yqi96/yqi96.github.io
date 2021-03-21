@@ -35,16 +35,13 @@ date: 2020-09-27 14:10:41
 - [SparseNet](http://blinging.xyz/posts/edc10435.html)
 - [CSPNet](http://blinging.xyz/posts/b956e9d5.html)
 
-### BibTeX
-```
-@INPROCEEDINGS{prn,
-  author={C. {Wang} and H. M. {Liao} and P. {Chen} and J. {Hsieh}},
-  booktitle={International Conference on Computer Vision Workshop}, 
-  title={Enriching Variety of Layer-Wise Learning Information by Gradient Combination}, 
-  year={2019},
-  pages={2477-2484},
-  pdf={https://openaccess.thecvf.com/content_ICCVW_2019/papers/LPCV/Wang_Enriching_Variety_of_Layer-Wise_Learning_Information_by_Gradient_Combination_ICCVW_2019_paper.pdf}
-}
-```
+
+>@INPROCEEDINGS{prn,
+>  author={C. {Wang} and H. M. {Liao} and P. {Chen} and J. {Hsieh}},
+>  booktitle={International Conference on Computer Vision Workshop}, 
+>  title={Enriching Variety of Layer-Wise Learning Information by Gradient Combination}, 
+>  year={2019},
+>  pages={2477-2484},
+>  pdf={`https://openaccess.thecvf.com/content_ICCVW_2019/papers/LPCV/Wang_Enriching_Variety_of_Layer-Wise_Learning_Information_by_Gradient_Combination_ICCVW_2019_paper.pdf`}}
 
 ---

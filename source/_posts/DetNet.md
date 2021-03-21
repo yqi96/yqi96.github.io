@@ -37,17 +37,13 @@ date: 2019-11-10 13:59:02
 
 - [https://github.com/zengarden/DetNet](https://github.com/zengarden/DetNet)
 
-### BibTeX
-```
-@InProceedings{detnet,
-  author={Li, Zeming and Peng, Chao and Yu, Gang and Zhang, Xiangyu and Deng, Yangdong and Sun, Jian},
-  title={DetNet: Design Backbone for Object Detection},
-  booktitle={European Conference on Computer Vision},
-  pages={339--354},
-  year={2018},
-  pdf={https://eccv2018.org/openaccess/content_ECCV_2018/papers/Zeming_Li_DetNet_Design_Backbone_ECCV_2018_paper.pdf}
-}
-```
+>@InProceedings{detnet,
+>  author={Li, Zeming and Peng, Chao and Yu, Gang and Zhang, Xiangyu and Deng, Yangdong and Sun, Jian},
+>  title={DetNet: Design Backbone for Object Detection},
+>  booktitle={European Conference on Computer Vision},
+>  pages={339--354},
+>  year={2018},
+>  pdf={`https://eccv2018.org/openaccess/content_ECCV_2018/papers/Zeming_Li_DetNet_Design_Backbone_ECCV_2018_paper.pdf`}}
 
 ---
 

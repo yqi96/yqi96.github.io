@@ -37,17 +37,13 @@ date: 2019-11-05 19:22:11
 
 ![Fig. 3 网络结构](ThunderNet.jpg)
 
-### BibTeX
-```
-@INPROCEEDINGS{thundernet,
-  author={Z. {Qin} and Z. {Li} and Z. {Zhang} and Y. {Bao} and G. {Yu} and Y. {Peng} and J. {Sun}},
-  booktitle={International Conference on Computer Vision}, 
-  title={ThunderNet: Towards Real-Time Generic Object Detection on Mobile Devices}, 
-  year={2019},
-  pages={6717-6726},
-  pdf={http://openaccess.thecvf.com/content_ICCV_2019/papers/Qin_ThunderNet_Towards_Real-Time_Generic_Object_Detection_on_Mobile_Devices_ICCV_2019_paper.pdf}
-}
-```
+>@INPROCEEDINGS{thundernet,
+>  author={Z. {Qin} and Z. {Li} and Z. {Zhang} and Y. {Bao} and G. {Yu} and Y. {Peng} and J. {Sun}},
+>  booktitle={International Conference on Computer Vision}, 
+>  title={ThunderNet: Towards Real-Time Generic Object Detection on Mobile Devices}, 
+>  year={2019},
+>  pages={6717-6726},
+>  pdf={`http://openaccess.thecvf.com/content_ICCV_2019/papers/Qin_ThunderNet_Towards_Real-Time_Generic_Object_Detection_on_Mobile_Devices_ICCV_2019_paper.pdf`}}
 
 ---
 

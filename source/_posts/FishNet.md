@@ -34,18 +34,13 @@ date: 2019-11-04 15:10:42
 - 《M2Det: A Single-Shot Object Detector based on Multi-Level Feature Pyramid Network》
 - 《CBNet: A Novel Composite Backbone Network Architecture for Object Detection》
 
-### BibTeX
-```
-@inproceedings{fishnet,
-  author = {Sun, Shuyang and Pang, Jiangmiao and Shi, Jianping and Yi, Shuai and Ouyang, Wanli},
-  booktitle = {Advances in Neural Information Processing Systems}, 
-  title={FishNet: A Versatile Backbone for Image, Region, and Pixel Level Prediction},
-  volume = {31},
-  year = {2018},
-  pages = {754--764},
-  pdf={https://proceedings.neurips.cc/paper/2018/file/75fc093c0ee742f6dddaa13fff98f104-Paper.pdf}
-}
-
-```
+>@inproceedings{fishnet,
+>  author = {Sun, Shuyang and Pang, Jiangmiao and Shi, Jianping and Yi, Shuai and Ouyang, Wanli},
+>  booktitle = {Advances in Neural Information Processing Systems}, 
+>  title={FishNet: A Versatile Backbone for Image, Region, and Pixel Level Prediction},
+>  volume = {31},
+>  year = {2018},
+>  pages = {754--764},
+>  pdf={`https://proceedings.neurips.cc/paper/2018/file/75fc093c0ee742f6dddaa13fff98f104-Paper.pdf`}}
 
 ---

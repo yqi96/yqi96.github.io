@@ -30,18 +30,13 @@ date: 2020-09-12 14:02:04
 - [PRN](http://blinging/posts/8a14a4e3.html)
 - [CSPNet](http://blinging/posts/b956e9d5.html)
 
-### BibTeX
-```
-@InProceedings{sparsenet,
-  author={Zhu, Ligeng and Deng, Ruizhi and Maire, Michael and Deng, Zhiwei and Mori, Greg and Tan, Ping},
-  title={Sparsely Aggregated Convolutional Networks},
-  booktitle={European Conference on Computer Vision},
-  year={2018},
-  pages={192--208},
-  pdf={https://openaccess.thecvf.com/content_ECCV_2018/papers/Ligeng_Zhu_Sparsely_Aggregated_Convolutional_ECCV_2018_paper.pdf}
-}
 
-
-```
+>@InProceedings{sparsenet,
+>  author={Zhu, Ligeng and Deng, Ruizhi and Maire, Michael and Deng, Zhiwei and Mori, Greg and Tan, Ping},
+>  title={Sparsely Aggregated Convolutional Networks},
+>  booktitle={European Conference on Computer Vision},
+>  year={2018},
+>  pages={192--208},
+>  pdf={`https://openaccess.thecvf.com/content_ECCV_2018/papers/Ligeng_Zhu_Sparsely_Aggregated_Convolutional_ECCV_2018_paper.pdf`}}
 
 ---

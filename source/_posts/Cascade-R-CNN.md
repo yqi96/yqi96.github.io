@@ -30,16 +30,12 @@ date: 2019-11-04 10:13:52
 - 《Object detection with discriminatively trained part-based models》
 - 《Object detection via a multiregion and semantic segmentation-aware CNN model》
 
-### BibTeX
-```
-@INPROCEEDINGS{cascade,
-  author={Z. {Cai} and N. {Vasconcelos}},
-  booktitle={Conference on Computer Vision and Pattern Recognition}, 
-  title={Cascade R-CNN: Delving Into High Quality Object Detection}, 
-  year={2018},
-  pages={6154-6162},
-  pdf={http://openaccess.thecvf.com/content_cvpr_2018/papers/Cai_Cascade_R-CNN_Delving_CVPR_2018_paper.pdf}
-}
-```
+>@INPROCEEDINGS{cascade,
+>  author={Z. {Cai} and N. {Vasconcelos}},
+>  booktitle={Conference on Computer Vision and Pattern Recognition}, 
+>  title={Cascade R-CNN: Delving Into High Quality Object Detection}, 
+>  year={2018},
+>  pages={6154-6162},
+>  pdf={`http://openaccess.thecvf.com/content_cvpr_2018/papers/Cai_Cascade_R-CNN_Delving_CVPR_2018_paper.pdf`}}
 ---
 

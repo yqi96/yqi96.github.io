@@ -21,17 +21,13 @@ date: 2019-11-08 09:47:32
 
 ![](LRF.png)
 
-### BibTeX
-```
-@INPROCEEDINGS{lrfnet,
-  author={T. {Wang} and R. M. {Anwer} and H. {Cholakkal} and F. S. {Khan} and Y. {Pang} and L. {Shao}},
-  booktitle={International Conference on Computer Vision}, 
-  title={Learning Rich Features at High-Speed for Single-Shot Object Detection}, 
-  year={2019},
-  pages={1971-1980},
-  pdf={http://openaccess.thecvf.com/content_ICCV_2019/papers/Wang_Learning_Rich_Features_at_High-Speed_for_Single-Shot_Object_Detection_ICCV_2019_paper.pdf}
-}
-```
+>@INPROCEEDINGS{lrfnet,
+>  author={T. {Wang} and R. M. {Anwer} and H. {Cholakkal} and F. S. {Khan} and Y. {Pang} and L. {Shao}},
+>  booktitle={International Conference on Computer Vision}, 
+>  title={Learning Rich Features at High-Speed for Single-Shot Object Detection}, 
+>  year={2019},
+>  pages={1971-1980},
+>  pdf={`http://openaccess.thecvf.com/content_ICCV_2019/papers/Wang_Learning_Rich_Features_at_High-Speed_for_Single-Shot_Object_Detection_ICCV_2019_paper.pdf`}}
 
 ---
 
