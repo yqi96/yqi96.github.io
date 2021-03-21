@@ -8,7 +8,7 @@ tags:
 abbrlink: edc10435
 date: 2020-09-12 14:02:04
 ---
-<script type="text/javascript" src="https://cdn.jsdelivr.net/npm/mathjax@3/es5/tex-svg.js?config=default"></script>
+<script type="text/javascript" src="https://cdn.mathjax.org/mathjax/latest/MathJax.js?config=TeX-AMS-MML_HTMLorMML"></script>
 
 <p></p>
 <!-- more -->
