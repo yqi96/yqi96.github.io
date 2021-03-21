@@ -6,7 +6,7 @@ tags:
   - light-weight
   - backbone
 abbrlink: edc10435
-date: 2018-09-08 00:00:00
+date: 2020-09-12 14:02:04
 ---
 <script type="text/javascript" src="https://cdn.jsdelivr.net/npm/mathjax@3/es5/tex-svg.js?config=default"></script>
 

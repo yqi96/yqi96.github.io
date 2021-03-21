@@ -1,12 +1,12 @@
 ---
 title: EfficientNet
-date: 2019-6-10
 categories: Paper
 tags:
   - ICML
   - light-weight
   - backbone
 abbrlink: a8875d51
+date: 2020-4-12 14:12:09
 ---
 <p></p>
 <!-- more -->

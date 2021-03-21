@@ -1,6 +1,5 @@
 ---
 title: EfficientDet
-date: 2020-6-16
 categories: Paper
 tags:
   - CVPR
@@ -8,6 +7,7 @@ tags:
   - fusion
   - neck
 abbrlink: a510d887
+date: 2020-8-27 15:12:47
 ---
 <p></p>
 <!-- more -->
