@@ -9,8 +9,7 @@ tags:
 abbrlink: bd869b1e
 date: 2018-06-18 00:00:00
 ---
-### 《[Cascade R-CNN: Delving into High Quality Object Detection](http://openaccess.thecvf.com/content_cvpr_2018/papers/Cai_Cascade_R-CNN_Delving_CVPR_2018_paper.pdf)》
-
+<p></p>
 <!-- more -->
 
 ### 问题
@@ -31,5 +30,16 @@ date: 2018-06-18 00:00:00
 - 《Object detection with discriminatively trained part-based models》
 - 《Object detection via a multiregion and semantic segmentation-aware CNN model》
 
+### BibTeX
+```
+@INPROCEEDINGS{cascade,
+  author={Z. {Cai} and N. {Vasconcelos}},
+  booktitle={Conference on Computer Vision and Pattern Recognition}, 
+  title={Cascade R-CNN: Delving Into High Quality Object Detection}, 
+  year={2018},
+  pages={6154-6162},
+  pdf={http://openaccess.thecvf.com/content_cvpr_2018/papers/Cai_Cascade_R-CNN_Delving_CVPR_2018_paper.pdf}
+}
+```
 ---
 

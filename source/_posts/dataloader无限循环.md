@@ -6,10 +6,13 @@ tags:
 abbrlink: 52f897dd
 date: 2021-01-18 21:51:03
 ---
-
+<p></p>
+<!-- more -->
 ```Python
 def inf_gen(dataloader):
     while True:
         for item in dataloader:
             yield item
 ```
+
+---

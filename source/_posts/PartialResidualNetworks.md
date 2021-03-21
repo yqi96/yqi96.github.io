@@ -9,9 +9,7 @@ tags:
 abbrlink: 8a14a4e3
 date: 2019-10-27 00:00:00
 ---
-
-### 《[Enriching Variety of Layer-wise Learning Information by Gradient Combination](https://openaccess.thecvf.com/content_ICCVW_2019/papers/LPCV/Wang_Enriching_Variety_of_Layer-Wise_Learning_Information_by_Gradient_Combination_ICCVW_2019_paper.pdf)》
-
+<p></p>
 <!-- more -->
 
 ### 问题
@@ -36,5 +34,17 @@ date: 2019-10-27 00:00:00
 
 - [SparseNet](http://blinging.xyz/posts/edc10435.html)
 - [CSPNet](http://blinging.xyz/posts/b956e9d5.html)
+
+### BibTeX
+```
+@INPROCEEDINGS{prn,
+  author={C. {Wang} and H. M. {Liao} and P. {Chen} and J. {Hsieh}},
+  booktitle={International Conference on Computer Vision Workshop}, 
+  title={Enriching Variety of Layer-Wise Learning Information by Gradient Combination}, 
+  year={2019},
+  pages={2477-2484},
+  pdf={https://openaccess.thecvf.com/content_ICCVW_2019/papers/LPCV/Wang_Enriching_Variety_of_Layer-Wise_Learning_Information_by_Gradient_Combination_ICCVW_2019_paper.pdf}
+}
+```
 
 ---

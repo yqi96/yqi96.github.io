@@ -7,9 +7,7 @@ tags:
 abbrlink: a2ad476c
 date: 2016-10-10 00:00:00
 ---
-
-### 《[A Unified Multi-scale Deep Convolutional Neural Network for Fast Object Detection](https://arxiv.org/pdf/1607.07155.pdf)》
-
+<p></p>
 <!-- more -->
 
 | 问题                       | 方案                                             |
@@ -23,6 +21,18 @@ date: 2016-10-10 00:00:00
 ![Probosal sub-network](RPN.png)
 
 ![Object detection sub-network](DET.png)
+
+### BibTeX
+```
+@InProceedings{mscnn,
+  author={Cai, Zhaowei and Fan, Quanfu and Feris, Rogerio S. and Vasconcelos, Nuno},
+  title={A Unified Multi-scale Deep Convolutional Neural Network for Fast Object Detection},
+  booktitle={European Conference on Computer Vision},
+  year={2016},
+  pages={354--370},
+  pdf={https://arxiv.org/pdf/1607.07155.pdf}
+}
+```
 
 ---
 

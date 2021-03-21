@@ -9,9 +9,7 @@ tags:
 abbrlink: e04a0e51
 date: 2018-12-02 00:00:00
 ---
-
-### 《[FishNet: A Versatile Backbone for Image, Region, and Pixel Level Prediction](http://papers.nips.cc/paper/7356-fishnet-a-versatile-backbone-for-image-region-and-pixel-level-prediction.pdf)》
-
+<p></p>
 <!-- more -->
 
 ### 问题
@@ -35,5 +33,19 @@ date: 2018-12-02 00:00:00
 - 《DFANet: Deep Feature Aggregation for Real-Time Semantic Segmentation》
 - 《M2Det: A Single-Shot Object Detector based on Multi-Level Feature Pyramid Network》
 - 《CBNet: A Novel Composite Backbone Network Architecture for Object Detection》
+
+### BibTeX
+```
+@inproceedings{fishnet,
+  author = {Sun, Shuyang and Pang, Jiangmiao and Shi, Jianping and Yi, Shuai and Ouyang, Wanli},
+  booktitle = {Advances in Neural Information Processing Systems}, 
+  title={FishNet: A Versatile Backbone for Image, Region, and Pixel Level Prediction},
+  volume = {31},
+  year = {2018},
+  pages = {754--764},
+  pdf={https://proceedings.neurips.cc/paper/2018/file/75fc093c0ee742f6dddaa13fff98f104-Paper.pdf}
+}
+
+```
 
 ---

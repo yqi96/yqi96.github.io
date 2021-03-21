@@ -8,9 +8,7 @@ tags:
 abbrlink: d3623899
 date: 2019-10-27 00:00:00
 ---
-
-### 《[Relation Parsing Neural Network for Human-Object Interaction Detection](http://openaccess.thecvf.com/content_ICCV_2019/papers/Zhou_Relation_Parsing_Neural_Network_for_Human-Object_Interaction_Detection_ICCV_2019_paper.pdf)》
-
+<p></p>
 <!-- more -->
 
 ### 问题
@@ -31,5 +29,17 @@ date: 2019-10-27 00:00:00
 - 《[Semi-supervised classification with graph convolutional networks](http://in.arxiv.org/pdf/1609.02907.pdf)》
 - 《[Convolutional networks on graphs for learning molecular fingerprints](https://papers.nips.cc/paper/5954-convolutional-networks-on-graphs-for-learning-molecular-fingerprints.pdf)》
 - 《[Diffusion-convolutional neural networks](https://papers.nips.cc/paper/6212-diffusion-convolutional-neural-networks.pdf)》
+
+### BibTeX
+```
+@INPROCEEDINGS{prnn,
+  author={P. {Zhou} and M. {Chi}},
+  booktitle={International Conference on Computer Vision}, 
+  title={Relation Parsing Neural Network for Human-Object Interaction Detection}, 
+  year={2019},
+  pages={843-851},
+  pdf={http://openaccess.thecvf.com/content_ICCV_2019/papers/Zhou_Relation_Parsing_Neural_Network_for_Human-Object_Interaction_Detection_ICCV_2019_paper.pdf}
+}
+```
 
 ---

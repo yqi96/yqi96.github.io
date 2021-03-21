@@ -8,9 +8,7 @@ tags:
 abbrlink: a562ac22
 date: 2018-09-08 00:00:00
 ---
-
-### 《[DetNet: Design backbone for object detection](https://eccv2018.org/openaccess/content_ECCV_2018/papers/Zeming_Li_DetNet_Design_Backbone_ECCV_2018_paper.pdf)》
-
+<p></p>
 <!-- more -->
 
 ### 问题
@@ -38,6 +36,18 @@ date: 2018-09-08 00:00:00
 ### 代码
 
 - [https://github.com/zengarden/DetNet](https://github.com/zengarden/DetNet)
+
+### BibTeX
+```
+@InProceedings{detnet,
+  author={Li, Zeming and Peng, Chao and Yu, Gang and Zhang, Xiangyu and Deng, Yangdong and Sun, Jian},
+  title={DetNet: Design Backbone for Object Detection},
+  booktitle={European Conference on Computer Vision},
+  pages={339--354},
+  year={2018},
+  pdf={https://eccv2018.org/openaccess/content_ECCV_2018/papers/Zeming_Li_DetNet_Design_Backbone_ECCV_2018_paper.pdf}
+}
+```
 
 ---
 

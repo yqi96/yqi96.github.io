@@ -8,8 +8,7 @@ tags:
 abbrlink: 92fd9c72
 date: 2019-10-27 00:00:00
 ---
-### 《[Scale-Aware Trident Networks for Object Detection](http://openaccess.thecvf.com/content_ICCV_2019/papers/Li_Scale-Aware_Trident_Networks_for_Object_Detection_ICCV_2019_paper.pdf)》
-
+<p></p>
 <!-- more -->
 
 ### 贡献
@@ -29,6 +28,18 @@ date: 2019-10-27 00:00:00
 - 类似SNIP，采用scale-aware的训练方法
 
 - 可以使用主分支检测达到近似三分支的精度(扩展尺度范围为0到∞相当于放弃了scale-aware训练策略？)
+
+### BibTeX
+```
+@INPROCEEDINGS{tridentnet,
+  author={Y. {Li} and Y. {Chen} and N. {Wang} and Z. {Zhang}},
+  booktitle={International Conference on Computer Vision}, 
+  title={Scale-Aware Trident Networks for Object Detection}, 
+  year={2019},
+  pages={6053-6062},
+  pdf={http://openaccess.thecvf.com/content_ICCV_2019/papers/Li_Scale-Aware_Trident_Networks_for_Object_Detection_ICCV_2019_paper.pdf}
+}
+```
 
 ---
 

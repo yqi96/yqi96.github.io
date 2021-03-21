@@ -14,11 +14,13 @@ MathJax.Hub.Config({
          SVG: { linebreaks: { automatic: true } }
 });
 </script>
+<p></p>
 <!-- more -->
 
 ### 理论
 
 Softmax公式:
+
 $$
 \begin{equation}
 p_i=\frac{e^{l_i}}{\sum_\limits{j}e^{l_j}}
@@ -36,11 +38,13 @@ $$
 \\(l_j-l_{max}\le0\\)且必有至少一项为0，因此指数和不会出现上溢，分母不会出现下溢。
 
 Cross-entropy公式：
+
 $$
 \begin{equation}
 xent=-\sum_\limits{i}y_i\ln p_i
 \end{equation}
 $$
+
 若\\(p_i\\)接近0，则\\(\ln p_i\\)会发生下溢，解决方案：
 
 将(2)代入(3),有

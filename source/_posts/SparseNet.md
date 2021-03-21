@@ -10,8 +10,7 @@ date: 2018-09-08 00:00:00
 ---
 <script type="text/javascript" src="https://cdn.jsdelivr.net/npm/mathjax@3/es5/tex-svg.js?config=default"></script>
 
-### 《[Sparsely Aggregated Convolutional Networks](https://openaccess.thecvf.com/content_ECCV_2018/papers/Ligeng_Zhu_Sparsely_Aggregated_Convolutional_ECCV_2018_paper.pdf)》
-
+<p></p>
 <!-- more -->
 
 ### 问题
@@ -30,5 +29,19 @@ date: 2018-09-08 00:00:00
 
 - [PRN](http://blinging/posts/8a14a4e3.html)
 - [CSPNet](http://blinging/posts/b956e9d5.html)
+
+### BibTeX
+```
+@InProceedings{sparsenet,
+  author={Zhu, Ligeng and Deng, Ruizhi and Maire, Michael and Deng, Zhiwei and Mori, Greg and Tan, Ping},
+  title={Sparsely Aggregated Convolutional Networks},
+  booktitle={European Conference on Computer Vision},
+  year={2018},
+  pages={192--208},
+  pdf={https://openaccess.thecvf.com/content_ECCV_2018/papers/Ligeng_Zhu_Sparsely_Aggregated_Convolutional_ECCV_2018_paper.pdf}
+}
+
+
+```
 
 ---

@@ -8,9 +8,7 @@ tags:
   - backbone
 abbrlink: a8875d51
 ---
-
-### 《[EfficientNet: Rethinking Model Scaling for Convolutional Neural Networks](https://arxiv.org/pdf/1905.11946.pdf)》
-
+<p></p>
 <!-- more -->
 
 ### 贡献
@@ -21,5 +19,20 @@ abbrlink: a8875d51
 
 ### 相关
 - [EfficientDet](http://blinging.xyz/posts/a510d887.html)
+
+
+### BibTeX
+```
+@InProceedings{efficientnet,
+  title={{E}fficient{N}et: Rethinking Model Scaling for Convolutional Neural Networks},
+  author={Tan, Mingxing and Le, Quoc},
+  booktitle={Proceedings of the International Conference on Machine Learning},
+  pages={6105--6114},
+  year={2019},
+  volume={97},
+  series={Proceedings of Machine Learning Research},
+  pdf={http://proceedings.mlr.press/v97/tan19a/tan19a.pdf}
+}
+```
 
 ---
