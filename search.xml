@@ -110,6 +110,35 @@
     
     
     <entry>
+      <title>RPNN</title>
+      <link href="posts/d3623899.html"/>
+      <url>posts/d3623899.html</url>
+      
+        <content type="html"><![CDATA[<p></p><span id="more"></span><h3 id="问题"><a href="#问题" class="headerlink" title="问题"></a>问题</h3><ul><li>目前的HOI方法从人和物体的特征以及他们的相对位置来预测人物交互，但是人实际是通过身体部件和物体进行交互的，身体部件应该得到更多的关注。</li></ul><h3 id="方案"><a href="#方案" class="headerlink" title="方案"></a>方案</h3><ul><li><p>引入了身体部件特征</p></li><li><p>引入了(人-身体部件)注意力和(物体-身体部件)注意力</p></li></ul><p><img src="/posts/d3623899/RPNN.png"></p><h3 id="相关"><a href="#相关" class="headerlink" title="相关"></a>相关</h3><ul><li>《<a href="http://openaccess.thecvf.com/content_ECCV_2018/papers/Haoshu_Fang_Pairwise_Body-Part_Attention_ECCV_2018_paper.pdf">Pairwise body-part attention for recognizing human-object interactions</a>》</li><li>《<a href="http://in.arxiv.org/pdf/1609.02907.pdf">Semi-supervised classification with graph convolutional networks</a>》</li><li>《<a href="https://papers.nips.cc/paper/5954-convolutional-networks-on-graphs-for-learning-molecular-fingerprints.pdf">Convolutional networks on graphs for learning molecular fingerprints</a>》</li><li>《<a href="https://papers.nips.cc/paper/6212-diffusion-convolutional-neural-networks.pdf">Diffusion-convolutional neural networks</a>》</li></ul><h3 id="BibTeX"><a href="#BibTeX" class="headerlink" title="BibTeX"></a>BibTeX</h3><figure class="highlight plain"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br><span class="line">8</span><br></pre></td><td class="code"><pre><span class="line">@INPROCEEDINGS&#123;prnn,</span><br><span class="line">  author&#x3D;&#123;P. &#123;Zhou&#125; and M. &#123;Chi&#125;&#125;,</span><br><span class="line">  booktitle&#x3D;&#123;International Conference on Computer Vision&#125;, </span><br><span class="line">  title&#x3D;&#123;Relation Parsing Neural Network for Human-Object Interaction Detection&#125;, </span><br><span class="line">  year&#x3D;&#123;2019&#125;,</span><br><span class="line">  pages&#x3D;&#123;843-851&#125;,</span><br><span class="line">  pdf&#x3D;&#123;http:&#x2F;&#x2F;openaccess.thecvf.com&#x2F;content_ICCV_2019&#x2F;papers&#x2F;Zhou_Relation_Parsing_Neural_Network_for_Human-Object_Interaction_Detection_ICCV_2019_paper.pdf&#125;</span><br><span class="line">&#125;</span><br></pre></td></tr></table></figure><hr>]]></content>
+      
+      
+      <categories>
+          
+          <category> Paper </category>
+          
+      </categories>
+      
+      
+        <tags>
+            
+            <tag> ICCV </tag>
+            
+            <tag> Visual Cognition </tag>
+            
+            <tag> relationship </tag>
+            
+        </tags>
+      
+    </entry>
+    
+    
+    
+    <entry>
       <title>Softmax和Cross-entropy的数值稳定问题</title>
       <link href="posts/6deaeeb1.html"/>
       <url>posts/6deaeeb1.html</url>
@@ -160,11 +189,11 @@
     
     
     <entry>
-      <title>CSPNet</title>
-      <link href="posts/b956e9d5.html"/>
-      <url>posts/b956e9d5.html</url>
+      <title>PRN</title>
+      <link href="posts/8a14a4e3.html"/>
+      <url>posts/8a14a4e3.html</url>
       
-        <content type="html"><![CDATA[<p></p><span id="more"></span><h3 id="贡献"><a href="#贡献" class="headerlink" title="贡献"></a>贡献</h3><ul><li>相比PRN，不但增加了梯度组合，还减少了运算</li><li>灵活性更强</li></ul><h3 id="方案"><a href="#方案" class="headerlink" title="方案"></a>方案</h3><ul><li>按通道将特征谱分成两份，其中一份接各种模块后和另一份融合<br><img src="/posts/b956e9d5/CSP-dense.png"><br><img src="/posts/b956e9d5/CSP-res.png"></li></ul><h3 id="相关"><a href="#相关" class="headerlink" title="相关"></a>相关</h3><ul><li><a href="http://blinging.xyz/posts/edc10435.html">SparseNet</a></li><li><a href="http://blinging.xyz/posts/8a14a4e3.html">PRN</a></li></ul><h3 id="BibTeX"><a href="#BibTeX" class="headerlink" title="BibTeX"></a>BibTeX</h3><figure class="highlight plain"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br><span class="line">8</span><br></pre></td><td class="code"><pre><span class="line">@INPROCEEDINGS&#123;cspnet,</span><br><span class="line">  author&#x3D;&#123;C. &#123;Wang&#125; and H. &#123;Mark Liao&#125; and Y. &#123;Wu&#125; and P. &#123;Chen&#125; and J. &#123;Hsieh&#125; and I. &#123;Yeh&#125;&#125;,</span><br><span class="line">  booktitle&#x3D;&#123;Conference on Computer Vision and Pattern Recognition Workshops&#125;, </span><br><span class="line">  title&#x3D;&#123;CSPNet: A New Backbone that can Enhance Learning Capability of CNN&#125;, </span><br><span class="line">  year&#x3D;&#123;2020&#125;,</span><br><span class="line">  pages&#x3D;&#123;1571-1580&#125;,</span><br><span class="line">  pdf&#x3D;&#123;https:&#x2F;&#x2F;openaccess.thecvf.com&#x2F;content_CVPRW_2020&#x2F;papers&#x2F;w28&#x2F;Wang_CSPNet_A_New_Backbone_That_Can_Enhance_Learning_Capability_of_CVPRW_2020_paper.pdf&#125;</span><br><span class="line">&#125;</span><br></pre></td></tr></table></figure><hr>]]></content>
+        <content type="html"><![CDATA[<p></p><span id="more"></span><h3 id="问题"><a href="#问题" class="headerlink" title="问题"></a>问题</h3><ul><li>之前的文献关注如何组合特征和如何使梯度得以传播，但是否可以通过得到更丰富的梯度组合来提高网络性能？</li></ul><h3 id="方案"><a href="#方案" class="headerlink" title="方案"></a>方案</h3><ul><li>部分通道求和（下图中的特征谱按对应颜色的箭头进行正向传播）<br><img src="/posts/8a14a4e3/PRN-shrink.png" alt="PRN-shrink"><br><img src="/posts/8a14a4e3/PRN-expand.png" alt="PRN-expand"><br><img src="/posts/8a14a4e3/PRN-bottleneck.png" alt="PRN-bottleneck"></li></ul><h3 id="优势"><a href="#优势" class="headerlink" title="优势"></a>优势</h3><ul><li>更丰富的梯度传播路径<br><img src="/posts/8a14a4e3/grad.png"></li><li>网络结构的灵活性</li><li>轻量</li></ul><h3 id="相关"><a href="#相关" class="headerlink" title="相关"></a>相关</h3><ul><li><a href="http://blinging.xyz/posts/edc10435.html">SparseNet</a></li><li><a href="http://blinging.xyz/posts/b956e9d5.html">CSPNet</a></li></ul><h3 id="BibTeX"><a href="#BibTeX" class="headerlink" title="BibTeX"></a>BibTeX</h3><figure class="highlight plain"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br><span class="line">8</span><br></pre></td><td class="code"><pre><span class="line">@INPROCEEDINGS&#123;prn,</span><br><span class="line">  author&#x3D;&#123;C. &#123;Wang&#125; and H. M. &#123;Liao&#125; and P. &#123;Chen&#125; and J. &#123;Hsieh&#125;&#125;,</span><br><span class="line">  booktitle&#x3D;&#123;International Conference on Computer Vision Workshop&#125;, </span><br><span class="line">  title&#x3D;&#123;Enriching Variety of Layer-Wise Learning Information by Gradient Combination&#125;, </span><br><span class="line">  year&#x3D;&#123;2019&#125;,</span><br><span class="line">  pages&#x3D;&#123;2477-2484&#125;,</span><br><span class="line">  pdf&#x3D;&#123;https:&#x2F;&#x2F;openaccess.thecvf.com&#x2F;content_ICCVW_2019&#x2F;papers&#x2F;LPCV&#x2F;Wang_Enriching_Variety_of_Layer-Wise_Learning_Information_by_Gradient_Combination_ICCVW_2019_paper.pdf&#125;</span><br><span class="line">&#125;</span><br></pre></td></tr></table></figure><hr>]]></content>
       
       
       <categories>
@@ -176,11 +205,42 @@
       
         <tags>
             
-            <tag> CVPR </tag>
+            <tag> light-weight </tag>
+            
+            <tag> ICCV </tag>
+            
+            <tag> backbone </tag>
+            
+            <tag> gradient </tag>
+            
+        </tags>
+      
+    </entry>
+    
+    
+    
+    <entry>
+      <title>SparseNet</title>
+      <link href="posts/edc10435.html"/>
+      <url>posts/edc10435.html</url>
+      
+        <content type="html"><![CDATA[<script type="text/javascript" src="https://cdn.jsdelivr.net/npm/mathjax@3/es5/tex-svg.js?config=default"></script><p></p><span id="more"></span><h3 id="问题"><a href="#问题" class="headerlink" title="问题"></a>问题</h3><ul><li>ResNet型密集聚合（+）：聚合后的特征不可分解，深层特征稀释或破坏浅层特征</li><li>DenseNet型密集聚合（concat）：参数以\(O(N^2)\)增加，消耗大量参数和运算来处理同一块特征</li></ul><h3 id="方案"><a href="#方案" class="headerlink" title="方案"></a>方案</h3><ul><li>保留短梯度路径（skip connection）的优势，但避免类ResNet、DenseNet的稠密聚合</li><li>\(y_l=F_l(\bigotimes(y_{l-c^0},y_{l-c^1},y_{l-c^2}…y_{l-c^k}))\)</li></ul><p><img src="/posts/edc10435/SparseNet.png"></p><h3 id="相关："><a href="#相关：" class="headerlink" title="相关："></a>相关：</h3><ul><li><a href="http://blinging/posts/8a14a4e3.html">PRN</a></li><li><a href="http://blinging/posts/b956e9d5.html">CSPNet</a></li></ul><h3 id="BibTeX"><a href="#BibTeX" class="headerlink" title="BibTeX"></a>BibTeX</h3><figure class="highlight plain"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br><span class="line">8</span><br><span class="line">9</span><br><span class="line">10</span><br></pre></td><td class="code"><pre><span class="line">@InProceedings&#123;sparsenet,</span><br><span class="line">  author&#x3D;&#123;Zhu, Ligeng and Deng, Ruizhi and Maire, Michael and Deng, Zhiwei and Mori, Greg and Tan, Ping&#125;,</span><br><span class="line">  title&#x3D;&#123;Sparsely Aggregated Convolutional Networks&#125;,</span><br><span class="line">  booktitle&#x3D;&#123;European Conference on Computer Vision&#125;,</span><br><span class="line">  year&#x3D;&#123;2018&#125;,</span><br><span class="line">  pages&#x3D;&#123;192--208&#125;,</span><br><span class="line">  pdf&#x3D;&#123;https:&#x2F;&#x2F;openaccess.thecvf.com&#x2F;content_ECCV_2018&#x2F;papers&#x2F;Ligeng_Zhu_Sparsely_Aggregated_Convolutional_ECCV_2018_paper.pdf&#125;</span><br><span class="line">&#125;</span><br><span class="line"></span><br><span class="line"></span><br></pre></td></tr></table></figure><hr>]]></content>
+      
+      
+      <categories>
+          
+          <category> Paper </category>
+          
+      </categories>
+      
+      
+        <tags>
             
             <tag> light-weight </tag>
             
             <tag> backbone </tag>
+            
+            <tag> ECCV </tag>
             
         </tags>
       
@@ -220,11 +280,11 @@
     
     
     <entry>
-      <title>CARAFE</title>
-      <link href="posts/ed54d5da.html"/>
-      <url>posts/ed54d5da.html</url>
+      <title>CSPNet</title>
+      <link href="posts/b956e9d5.html"/>
+      <url>posts/b956e9d5.html</url>
       
-        <content type="html"><![CDATA[<p></p><span id="more"></span><h3 id="目的"><a href="#目的" class="headerlink" title="目的"></a>目的</h3><ul><li>解决检测、分割等任务中的上采样问题</li></ul><h3 id="特性"><a href="#特性" class="headerlink" title="特性"></a>特性</h3><ul><li>大感受野</li><li>内容感知</li><li>轻量级</li></ul><h3 id="方案"><a href="#方案" class="headerlink" title="方案"></a>方案</h3><p><img src="/posts/ed54d5da/CARAFE.png"></p><h3 id="代码"><a href="#代码" class="headerlink" title="代码"></a>代码</h3><ul><li><a href="https://github.com/open-mmlab/mmdetection">https://github.com/open-mmlab/mmdetection</a></li></ul><h3 id="BibTeX"><a href="#BibTeX" class="headerlink" title="BibTeX"></a>BibTeX</h3><figure class="highlight plain"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br><span class="line">8</span><br></pre></td><td class="code"><pre><span class="line">@INPROCEEDINGS&#123;carafe,</span><br><span class="line">  author&#x3D;&#123;J. &#123;Wang&#125; and K. &#123;Chen&#125; and R. &#123;Xu&#125; and Z. &#123;Liu&#125; and C. C. &#123;Loy&#125; and D. &#123;Lin&#125;&#125;,</span><br><span class="line">  booktitle&#x3D;&#123;International Conference on Computer Vision&#125;, </span><br><span class="line">  title&#x3D;&#123;CARAFE: Content-Aware ReAssembly of FEatures&#125;, </span><br><span class="line">  year&#x3D;&#123;2019&#125;,</span><br><span class="line">  pages&#x3D;&#123;3007-3016&#125;,</span><br><span class="line">  pdf&#x3D;&#123;http:&#x2F;&#x2F;openaccess.thecvf.com&#x2F;content_ICCV_2019&#x2F;papers&#x2F;Wang_CARAFE_Content-Aware_ReAssembly_of_FEatures_ICCV_2019_paper.pdf&#125;</span><br><span class="line">&#125;</span><br></pre></td></tr></table></figure><hr>]]></content>
+        <content type="html"><![CDATA[<p></p><span id="more"></span><h3 id="贡献"><a href="#贡献" class="headerlink" title="贡献"></a>贡献</h3><ul><li>相比PRN，不但增加了梯度组合，还减少了运算</li><li>灵活性更强</li></ul><h3 id="方案"><a href="#方案" class="headerlink" title="方案"></a>方案</h3><ul><li>按通道将特征谱分成两份，其中一份接各种模块后和另一份融合<br><img src="/posts/b956e9d5/CSP-dense.png"><br><img src="/posts/b956e9d5/CSP-res.png"></li></ul><h3 id="相关"><a href="#相关" class="headerlink" title="相关"></a>相关</h3><ul><li><a href="http://blinging.xyz/posts/edc10435.html">SparseNet</a></li><li><a href="http://blinging.xyz/posts/8a14a4e3.html">PRN</a></li></ul><h3 id="BibTeX"><a href="#BibTeX" class="headerlink" title="BibTeX"></a>BibTeX</h3><figure class="highlight plain"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br><span class="line">8</span><br></pre></td><td class="code"><pre><span class="line">@INPROCEEDINGS&#123;cspnet,</span><br><span class="line">  author&#x3D;&#123;C. &#123;Wang&#125; and H. &#123;Mark Liao&#125; and Y. &#123;Wu&#125; and P. &#123;Chen&#125; and J. &#123;Hsieh&#125; and I. &#123;Yeh&#125;&#125;,</span><br><span class="line">  booktitle&#x3D;&#123;Conference on Computer Vision and Pattern Recognition Workshops&#125;, </span><br><span class="line">  title&#x3D;&#123;CSPNet: A New Backbone that can Enhance Learning Capability of CNN&#125;, </span><br><span class="line">  year&#x3D;&#123;2020&#125;,</span><br><span class="line">  pages&#x3D;&#123;1571-1580&#125;,</span><br><span class="line">  pdf&#x3D;&#123;https:&#x2F;&#x2F;openaccess.thecvf.com&#x2F;content_CVPRW_2020&#x2F;papers&#x2F;w28&#x2F;Wang_CSPNet_A_New_Backbone_That_Can_Enhance_Learning_Capability_of_CVPRW_2020_paper.pdf&#125;</span><br><span class="line">&#125;</span><br></pre></td></tr></table></figure><hr>]]></content>
       
       
       <categories>
@@ -236,253 +296,11 @@
       
         <tags>
             
-            <tag> detection </tag>
+            <tag> CVPR </tag>
             
             <tag> light-weight </tag>
-            
-            <tag> ICCV </tag>
-            
-            <tag> upsample </tag>
-            
-        </tags>
-      
-    </entry>
-    
-    
-    
-    <entry>
-      <title>ClusDet</title>
-      <link href="posts/e77010ad.html"/>
-      <url>posts/e77010ad.html</url>
-      
-        <content type="html"><![CDATA[<p></p><span id="more"></span><h3 id="问题"><a href="#问题" class="headerlink" title="问题"></a>问题</h3><ul><li><p>输入分辨率高</p></li><li><p>目标小</p></li><li><p>目标稀疏且非均匀分布</p></li></ul><h3 id="方案"><a href="#方案" class="headerlink" title="方案"></a>方案</h3><ul><li>检测目标聚集区域，并从该区域内检测，将结果与全局检测结合</li></ul><h3 id="BibTeX"><a href="#BibTeX" class="headerlink" title="BibTeX"></a>BibTeX</h3><figure class="highlight plain"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br><span class="line">8</span><br></pre></td><td class="code"><pre><span class="line">@INPROCEEDINGS&#123;clusdet,</span><br><span class="line">  author&#x3D;&#123;F. &#123;Yang&#125; and H. &#123;Fan&#125; and P. &#123;Chu&#125; and E. &#123;Blasch&#125; and H. &#123;Ling&#125;&#125;,</span><br><span class="line">  booktitle&#x3D;&#123;International Conference on Computer Vision&#125;, </span><br><span class="line">  title&#x3D;&#123;Clustered Object Detection in Aerial Images&#125;, </span><br><span class="line">  year&#x3D;&#123;2019&#125;,</span><br><span class="line">  pages&#x3D;&#123;8310-8319&#125;,</span><br><span class="line">  pdf&#x3D;&#123;http:&#x2F;&#x2F;openaccess.thecvf.com&#x2F;content_ICCV_2019&#x2F;papers&#x2F;Yang_Clustered_Object_Detection_in_Aerial_Images_ICCV_2019_paper.pdf&#125;</span><br><span class="line">&#125;</span><br></pre></td></tr></table></figure><hr>]]></content>
-      
-      
-      <categories>
-          
-          <category> Paper </category>
-          
-      </categories>
-      
-      
-        <tags>
-            
-            <tag> detection </tag>
-            
-            <tag> ICCV </tag>
-            
-            <tag> aerial </tag>
-            
-        </tags>
-      
-    </entry>
-    
-    
-    
-    <entry>
-      <title>DAFS</title>
-      <link href="posts/102b1f4c.html"/>
-      <url>posts/102b1f4c.html</url>
-      
-        <content type="html"><![CDATA[<p></p><span id="more"></span><h3 id="问题"><a href="#问题" class="headerlink" title="问题"></a>问题</h3><ul><li>RefineDet的ODM预测时规则卷积的感受野和refine过的anchor位置不匹配</li></ul><h3 id="方案"><a href="#方案" class="headerlink" title="方案"></a>方案</h3><ul><li>提出Dynamic Anchor Feature Selection(DAFS)，根据refine后的anchor动态地选择特征</li><li>改进RefineDet的TCB模块，双向聚合特征谱</li></ul><h3 id="BibTeX"><a href="#BibTeX" class="headerlink" title="BibTeX"></a>BibTeX</h3><figure class="highlight plain"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br><span class="line">8</span><br></pre></td><td class="code"><pre><span class="line">@INPROCEEDINGS&#123;dafs,</span><br><span class="line">  author&#x3D;&#123;S. &#123;Li&#125; and L. &#123;Yang&#125; and J. &#123;Huang&#125; and X. &#123;Hua&#125; and L. &#123;Zhang&#125;&#125;,</span><br><span class="line">  booktitle&#x3D;&#123;International Conference on Computer Vision&#125;, </span><br><span class="line">  title&#x3D;&#123;Dynamic Anchor Feature Selection for Single-Shot Object Detection&#125;, </span><br><span class="line">  year&#x3D;&#123;2019&#125;,</span><br><span class="line">  pages&#x3D;&#123;6608-6617&#125;,</span><br><span class="line">  pdf&#x3D;&#123;http:&#x2F;&#x2F;openaccess.thecvf.com&#x2F;content_ICCV_2019&#x2F;papers&#x2F;Li_Dynamic_Anchor_Feature_Selection_for_Single-Shot_Object_Detection_ICCV_2019_paper.pdf&#125;</span><br><span class="line">&#125;</span><br></pre></td></tr></table></figure><hr>]]></content>
-      
-      
-      <categories>
-          
-          <category> Paper </category>
-          
-      </categories>
-      
-      
-        <tags>
-            
-            <tag> detection </tag>
-            
-            <tag> ICCV </tag>
-            
-        </tags>
-      
-    </entry>
-    
-    
-    
-    <entry>
-      <title>LRFNet</title>
-      <link href="posts/127af3.html"/>
-      <url>posts/127af3.html</url>
-      
-        <content type="html"><![CDATA[<p></p><span id="more"></span><h3 id="问题"><a href="#问题" class="headerlink" title="问题"></a>问题</h3><ul><li>现有多数目标检测网络是从ImageNet预训练的分类网络微调的，但是检测和分类任务对平移的敏感性要求不同，预训练网络和检测任务之间有一定差异，用分类预训练网络不是最优的。但是从头开始训练检测网络需要大量时间。</li></ul><h3 id="贡献"><a href="#贡献" class="headerlink" title="贡献"></a>贡献</h3><ul><li>用分类预训练网络做主体，外接一路从头训练的小网络，结合两者特征</li></ul><p><img src="/posts/127af3/LRF.png"></p><h3 id="BibTeX"><a href="#BibTeX" class="headerlink" title="BibTeX"></a>BibTeX</h3><figure class="highlight plain"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br><span class="line">8</span><br></pre></td><td class="code"><pre><span class="line">@INPROCEEDINGS&#123;lrfnet,</span><br><span class="line">  author&#x3D;&#123;T. &#123;Wang&#125; and R. M. &#123;Anwer&#125; and H. &#123;Cholakkal&#125; and F. S. &#123;Khan&#125; and Y. &#123;Pang&#125; and L. &#123;Shao&#125;&#125;,</span><br><span class="line">  booktitle&#x3D;&#123;International Conference on Computer Vision&#125;, </span><br><span class="line">  title&#x3D;&#123;Learning Rich Features at High-Speed for Single-Shot Object Detection&#125;, </span><br><span class="line">  year&#x3D;&#123;2019&#125;,</span><br><span class="line">  pages&#x3D;&#123;1971-1980&#125;,</span><br><span class="line">  pdf&#x3D;&#123;http:&#x2F;&#x2F;openaccess.thecvf.com&#x2F;content_ICCV_2019&#x2F;papers&#x2F;Wang_Learning_Rich_Features_at_High-Speed_for_Single-Shot_Object_Detection_ICCV_2019_paper.pdf&#125;</span><br><span class="line">&#125;</span><br></pre></td></tr></table></figure><hr>]]></content>
-      
-      
-      <categories>
-          
-          <category> Paper </category>
-          
-      </categories>
-      
-      
-        <tags>
-            
-            <tag> detection </tag>
-            
-            <tag> ICCV </tag>
-            
-            <tag> scratch </tag>
-            
-        </tags>
-      
-    </entry>
-    
-    
-    
-    <entry>
-      <title>PRN</title>
-      <link href="posts/8a14a4e3.html"/>
-      <url>posts/8a14a4e3.html</url>
-      
-        <content type="html"><![CDATA[<p></p><span id="more"></span><h3 id="问题"><a href="#问题" class="headerlink" title="问题"></a>问题</h3><ul><li>之前的文献关注如何组合特征和如何使梯度得以传播，但是否可以通过得到更丰富的梯度组合来提高网络性能？</li></ul><h3 id="方案"><a href="#方案" class="headerlink" title="方案"></a>方案</h3><ul><li>部分通道求和（下图中的特征谱按对应颜色的箭头进行正向传播）<br><img src="/posts/8a14a4e3/PRN-shrink.png" alt="PRN-shrink"><br><img src="/posts/8a14a4e3/PRN-expand.png" alt="PRN-expand"><br><img src="/posts/8a14a4e3/PRN-bottleneck.png" alt="PRN-bottleneck"></li></ul><h3 id="优势"><a href="#优势" class="headerlink" title="优势"></a>优势</h3><ul><li>更丰富的梯度传播路径<br><img src="/posts/8a14a4e3/grad.png"></li><li>网络结构的灵活性</li><li>轻量</li></ul><h3 id="相关"><a href="#相关" class="headerlink" title="相关"></a>相关</h3><ul><li><a href="http://blinging.xyz/posts/edc10435.html">SparseNet</a></li><li><a href="http://blinging.xyz/posts/b956e9d5.html">CSPNet</a></li></ul><h3 id="BibTeX"><a href="#BibTeX" class="headerlink" title="BibTeX"></a>BibTeX</h3><figure class="highlight plain"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br><span class="line">8</span><br></pre></td><td class="code"><pre><span class="line">@INPROCEEDINGS&#123;prn,</span><br><span class="line">  author&#x3D;&#123;C. &#123;Wang&#125; and H. M. &#123;Liao&#125; and P. &#123;Chen&#125; and J. &#123;Hsieh&#125;&#125;,</span><br><span class="line">  booktitle&#x3D;&#123;International Conference on Computer Vision Workshop&#125;, </span><br><span class="line">  title&#x3D;&#123;Enriching Variety of Layer-Wise Learning Information by Gradient Combination&#125;, </span><br><span class="line">  year&#x3D;&#123;2019&#125;,</span><br><span class="line">  pages&#x3D;&#123;2477-2484&#125;,</span><br><span class="line">  pdf&#x3D;&#123;https:&#x2F;&#x2F;openaccess.thecvf.com&#x2F;content_ICCVW_2019&#x2F;papers&#x2F;LPCV&#x2F;Wang_Enriching_Variety_of_Layer-Wise_Learning_Information_by_Gradient_Combination_ICCVW_2019_paper.pdf&#125;</span><br><span class="line">&#125;</span><br></pre></td></tr></table></figure><hr>]]></content>
-      
-      
-      <categories>
-          
-          <category> Paper </category>
-          
-      </categories>
-      
-      
-        <tags>
-            
-            <tag> light-weight </tag>
-            
-            <tag> ICCV </tag>
             
             <tag> backbone </tag>
-            
-            <tag> gradient </tag>
-            
-        </tags>
-      
-    </entry>
-    
-    
-    
-    <entry>
-      <title>RPNN</title>
-      <link href="posts/d3623899.html"/>
-      <url>posts/d3623899.html</url>
-      
-        <content type="html"><![CDATA[<p></p><span id="more"></span><h3 id="问题"><a href="#问题" class="headerlink" title="问题"></a>问题</h3><ul><li>目前的HOI方法从人和物体的特征以及他们的相对位置来预测人物交互，但是人实际是通过身体部件和物体进行交互的，身体部件应该得到更多的关注。</li></ul><h3 id="方案"><a href="#方案" class="headerlink" title="方案"></a>方案</h3><ul><li><p>引入了身体部件特征</p></li><li><p>引入了(人-身体部件)注意力和(物体-身体部件)注意力</p></li></ul><p><img src="/posts/d3623899/RPNN.png"></p><h3 id="相关"><a href="#相关" class="headerlink" title="相关"></a>相关</h3><ul><li>《<a href="http://openaccess.thecvf.com/content_ECCV_2018/papers/Haoshu_Fang_Pairwise_Body-Part_Attention_ECCV_2018_paper.pdf">Pairwise body-part attention for recognizing human-object interactions</a>》</li><li>《<a href="http://in.arxiv.org/pdf/1609.02907.pdf">Semi-supervised classification with graph convolutional networks</a>》</li><li>《<a href="https://papers.nips.cc/paper/5954-convolutional-networks-on-graphs-for-learning-molecular-fingerprints.pdf">Convolutional networks on graphs for learning molecular fingerprints</a>》</li><li>《<a href="https://papers.nips.cc/paper/6212-diffusion-convolutional-neural-networks.pdf">Diffusion-convolutional neural networks</a>》</li></ul><h3 id="BibTeX"><a href="#BibTeX" class="headerlink" title="BibTeX"></a>BibTeX</h3><figure class="highlight plain"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br><span class="line">8</span><br></pre></td><td class="code"><pre><span class="line">@INPROCEEDINGS&#123;prnn,</span><br><span class="line">  author&#x3D;&#123;P. &#123;Zhou&#125; and M. &#123;Chi&#125;&#125;,</span><br><span class="line">  booktitle&#x3D;&#123;International Conference on Computer Vision&#125;, </span><br><span class="line">  title&#x3D;&#123;Relation Parsing Neural Network for Human-Object Interaction Detection&#125;, </span><br><span class="line">  year&#x3D;&#123;2019&#125;,</span><br><span class="line">  pages&#x3D;&#123;843-851&#125;,</span><br><span class="line">  pdf&#x3D;&#123;http:&#x2F;&#x2F;openaccess.thecvf.com&#x2F;content_ICCV_2019&#x2F;papers&#x2F;Zhou_Relation_Parsing_Neural_Network_for_Human-Object_Interaction_Detection_ICCV_2019_paper.pdf&#125;</span><br><span class="line">&#125;</span><br></pre></td></tr></table></figure><hr>]]></content>
-      
-      
-      <categories>
-          
-          <category> Paper </category>
-          
-      </categories>
-      
-      
-        <tags>
-            
-            <tag> ICCV </tag>
-            
-            <tag> Visual Cognition </tag>
-            
-            <tag> relationship </tag>
-            
-        </tags>
-      
-    </entry>
-    
-    
-    
-    <entry>
-      <title>ThunderNet</title>
-      <link href="posts/bd9092df.html"/>
-      <url>posts/bd9092df.html</url>
-      
-        <content type="html"><![CDATA[<p></p><span id="more"></span><h3 id="问题"><a href="#问题" class="headerlink" title="问题"></a>问题</h3><ul><li>目前没有轻量级二阶段检测模型</li></ul><h3 id="方案"><a href="#方案" class="headerlink" title="方案"></a>方案</h3><ul><li>backbone<ul><li>着眼运行效率和感受野，以ShuffleNet v2为基础进行修改，将3x3的DW Conv全部改成5x5的DW Conv</li></ul></li><li>detection head<ul><li><p>设计Context Enhancement Module以增大感受野</p><p><img src="/posts/bd9092df/CEM.jpg" alt="Fig. 1 CEM"></p></li><li><p>设计Spacial Attention Module改善用于PSRoI align的特征</p><p><img src="/posts/bd9092df/SAM.jpg" alt="Fig. 2 SAM"></p></li><li><p>用5x5DWConv+1x1Conv取代3x3Conv</p></li></ul></li></ul><p><img src="/posts/bd9092df/ThunderNet.jpg" alt="Fig. 3 网络结构"></p><h3 id="BibTeX"><a href="#BibTeX" class="headerlink" title="BibTeX"></a>BibTeX</h3><figure class="highlight plain"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br><span class="line">8</span><br></pre></td><td class="code"><pre><span class="line">@INPROCEEDINGS&#123;thundernet,</span><br><span class="line">  author&#x3D;&#123;Z. &#123;Qin&#125; and Z. &#123;Li&#125; and Z. &#123;Zhang&#125; and Y. &#123;Bao&#125; and G. &#123;Yu&#125; and Y. &#123;Peng&#125; and J. &#123;Sun&#125;&#125;,</span><br><span class="line">  booktitle&#x3D;&#123;International Conference on Computer Vision&#125;, </span><br><span class="line">  title&#x3D;&#123;ThunderNet: Towards Real-Time Generic Object Detection on Mobile Devices&#125;, </span><br><span class="line">  year&#x3D;&#123;2019&#125;,</span><br><span class="line">  pages&#x3D;&#123;6717-6726&#125;,</span><br><span class="line">  pdf&#x3D;&#123;http:&#x2F;&#x2F;openaccess.thecvf.com&#x2F;content_ICCV_2019&#x2F;papers&#x2F;Qin_ThunderNet_Towards_Real-Time_Generic_Object_Detection_on_Mobile_Devices_ICCV_2019_paper.pdf&#125;</span><br><span class="line">&#125;</span><br></pre></td></tr></table></figure><hr>]]></content>
-      
-      
-      <categories>
-          
-          <category> Paper </category>
-          
-      </categories>
-      
-      
-        <tags>
-            
-            <tag> detection </tag>
-            
-            <tag> light-weight </tag>
-            
-            <tag> two-stage </tag>
-            
-            <tag> ICCV </tag>
-            
-            <tag> backbone </tag>
-            
-            <tag> attention </tag>
-            
-        </tags>
-      
-    </entry>
-    
-    
-    
-    <entry>
-      <title>TridentNet</title>
-      <link href="posts/92fd9c72.html"/>
-      <url>posts/92fd9c72.html</url>
-      
-        <content type="html"><![CDATA[<p></p><span id="more"></span><h3 id="贡献"><a href="#贡献" class="headerlink" title="贡献"></a>贡献</h3><ul><li><p>通过对backbone网络的部分层设置不同的扩张率，探索了感受野对目标检测效果的影响</p><ul><li><p>感受野需要和目标尺度相匹配</p></li><li><p>有效感受野小于理论感受野</p></li><li><p>感受野需要在大目标和小目标之间找到平衡</p></li></ul></li><li><p>权重共享，扩张率不同的多条分支生成不同感受野的特征以应对不同尺度的目标</p><p><img src="/posts/92fd9c72/TridentNet.png"></p></li><li><p>类似SNIP，采用scale-aware的训练方法</p></li><li><p>可以使用主分支检测达到近似三分支的精度(扩展尺度范围为0到∞相当于放弃了scale-aware训练策略？)</p></li></ul><h3 id="BibTeX"><a href="#BibTeX" class="headerlink" title="BibTeX"></a>BibTeX</h3><figure class="highlight plain"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br><span class="line">8</span><br></pre></td><td class="code"><pre><span class="line">@INPROCEEDINGS&#123;tridentnet,</span><br><span class="line">  author&#x3D;&#123;Y. &#123;Li&#125; and Y. &#123;Chen&#125; and N. &#123;Wang&#125; and Z. &#123;Zhang&#125;&#125;,</span><br><span class="line">  booktitle&#x3D;&#123;International Conference on Computer Vision&#125;, </span><br><span class="line">  title&#x3D;&#123;Scale-Aware Trident Networks for Object Detection&#125;, </span><br><span class="line">  year&#x3D;&#123;2019&#125;,</span><br><span class="line">  pages&#x3D;&#123;6053-6062&#125;,</span><br><span class="line">  pdf&#x3D;&#123;http:&#x2F;&#x2F;openaccess.thecvf.com&#x2F;content_ICCV_2019&#x2F;papers&#x2F;Li_Scale-Aware_Trident_Networks_for_Object_Detection_ICCV_2019_paper.pdf&#125;</span><br><span class="line">&#125;</span><br></pre></td></tr></table></figure><hr>]]></content>
-      
-      
-      <categories>
-          
-          <category> Paper </category>
-          
-      </categories>
-      
-      
-        <tags>
-            
-            <tag> detection </tag>
-            
-            <tag> ICCV </tag>
-            
-            <tag> scale </tag>
-            
-        </tags>
-      
-    </entry>
-    
-    
-    
-    <entry>
-      <title>VrR-VG</title>
-      <link href="posts/bdcfc59d.html"/>
-      <url>posts/bdcfc59d.html</url>
-      
-        <content type="html"><![CDATA[<p></p><span id="more"></span><h3 id="问题"><a href="#问题" class="headerlink" title="问题"></a>问题</h3><ul><li>现有的关系预测模型会拟合静态偏差（空间位置、固定搭配等可以从非视觉信息获取的结果）而不是学习视觉信息</li></ul><h3 id="原因"><a href="#原因" class="headerlink" title="原因"></a>原因</h3><ul><li><p>神经网络有强大的从非视觉信息预测的能力</p></li><li><p>空间关系(on、in等)完全可以通过bbox坐标来预测</p></li><li><p>某些关系(wear、ride、has等)可以从语言先验或者统计分析来预测</p><p><img src="/posts/bdcfc59d/distribution2.png"></p></li><li><p>现有数据集有很多上述标签</p><p><img src="/posts/bdcfc59d/distribution1.png"></p></li></ul><h3 id="贡献"><a href="#贡献" class="headerlink" title="贡献"></a>贡献</h3><ul><li><p>新的关系数据集<a href="http://vrr-vg.com/">VrR-VG</a></p></li><li><p>关系感知模型</p><ul><li><p>可以通过坐标、类别等信息来预测的关系是视觉无关的</p></li><li><p>Visual Discriminator: VD-Net通过坐标、类别、词汇等非视觉信息来预测关系</p></li><li><p>用VD-Net无法准确预测的关系标签来训练视觉感知模型并用于VQA等任务</p></li></ul></li></ul><h3 id="BibTeX"><a href="#BibTeX" class="headerlink" title="BibTeX"></a>BibTeX</h3><figure class="highlight plain"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br><span class="line">8</span><br></pre></td><td class="code"><pre><span class="line">@INPROCEEDINGS&#123;vrrvg,</span><br><span class="line">  author&#x3D;&#123;Y. &#123;Liang&#125; and Y. &#123;Bai&#125; and W. &#123;Zhang&#125; and X. &#123;Qian&#125; and L. &#123;Zhu&#125; and T. &#123;Mei&#125;&#125;,</span><br><span class="line">  booktitle&#x3D;&#123;International Conference on Computer Vision&#125;, </span><br><span class="line">  title&#x3D;&#123;VrR-VG: Refocusing Visually-Relevant Relationships&#125;, </span><br><span class="line">  year&#x3D;&#123;2019&#125;,</span><br><span class="line">  pages&#x3D;&#123;10402-10411&#125;,</span><br><span class="line">  pdf&#x3D;&#123;http:&#x2F;&#x2F;openaccess.thecvf.com&#x2F;content_ICCV_2019&#x2F;papers&#x2F;Liang_VrR-VG_Refocusing_Visually-Relevant_Relationships_ICCV_2019_paper.pdf&#125;</span><br><span class="line">&#125;</span><br></pre></td></tr></table></figure><hr>]]></content>
-      
-      
-      <categories>
-          
-          <category> Paper </category>
-          
-      </categories>
-      
-      
-        <tags>
-            
-            <tag> ICCV </tag>
-            
-            <tag> Visual Cognition </tag>
-            
-            <tag> relationship </tag>
-            
-            <tag> dataset </tag>
             
         </tags>
       
@@ -520,11 +338,11 @@
     
     
     <entry>
-      <title>FishNet</title>
-      <link href="posts/e04a0e51.html"/>
-      <url>posts/e04a0e51.html</url>
+      <title>DAFS</title>
+      <link href="posts/102b1f4c.html"/>
+      <url>posts/102b1f4c.html</url>
       
-        <content type="html"><![CDATA[<p></p><span id="more"></span><h3 id="问题"><a href="#问题" class="headerlink" title="问题"></a>问题</h3><ul><li>目前区域/像素级别的任务都在使用分类预训练网络作为backbone，而没有一个专门设计的backbone</li><li>目前的工作无法直接地将梯度反传到浅层</li></ul><h3 id="方案"><a href="#方案" class="headerlink" title="方案"></a>方案</h3><ul><li><p>提出了FishNet结构（降采样-上采样-降采样结构）</p><p><img src="/posts/e04a0e51/FishNet.jpg" alt="FishNet"></p></li><li><p>对ResBlock进行修改，取消了identity mapping中的卷积，降采样/增加通道放在外部</p><p><img src="/posts/e04a0e51/resblock.jpg" alt="ResBlock"></p></li></ul><h3 id="相关"><a href="#相关" class="headerlink" title="相关"></a>相关</h3><ul><li>《Stacked Hourglass Networks for Human Pose Estimation》</li><li>《DFANet: Deep Feature Aggregation for Real-Time Semantic Segmentation》</li><li>《M2Det: A Single-Shot Object Detector based on Multi-Level Feature Pyramid Network》</li><li>《CBNet: A Novel Composite Backbone Network Architecture for Object Detection》</li></ul><h3 id="BibTeX"><a href="#BibTeX" class="headerlink" title="BibTeX"></a>BibTeX</h3><figure class="highlight plain"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br><span class="line">8</span><br><span class="line">9</span><br><span class="line">10</span><br></pre></td><td class="code"><pre><span class="line">@inproceedings&#123;fishnet,</span><br><span class="line">  author &#x3D; &#123;Sun, Shuyang and Pang, Jiangmiao and Shi, Jianping and Yi, Shuai and Ouyang, Wanli&#125;,</span><br><span class="line">  booktitle &#x3D; &#123;Advances in Neural Information Processing Systems&#125;, </span><br><span class="line">  title&#x3D;&#123;FishNet: A Versatile Backbone for Image, Region, and Pixel Level Prediction&#125;,</span><br><span class="line">  volume &#x3D; &#123;31&#125;,</span><br><span class="line">  year &#x3D; &#123;2018&#125;,</span><br><span class="line">  pages &#x3D; &#123;754--764&#125;,</span><br><span class="line">  pdf&#x3D;&#123;https:&#x2F;&#x2F;proceedings.neurips.cc&#x2F;paper&#x2F;2018&#x2F;file&#x2F;75fc093c0ee742f6dddaa13fff98f104-Paper.pdf&#125;</span><br><span class="line">&#125;</span><br><span class="line"></span><br></pre></td></tr></table></figure><hr>]]></content>
+        <content type="html"><![CDATA[<p></p><span id="more"></span><h3 id="问题"><a href="#问题" class="headerlink" title="问题"></a>问题</h3><ul><li>RefineDet的ODM预测时规则卷积的感受野和refine过的anchor位置不匹配</li></ul><h3 id="方案"><a href="#方案" class="headerlink" title="方案"></a>方案</h3><ul><li>提出Dynamic Anchor Feature Selection(DAFS)，根据refine后的anchor动态地选择特征</li><li>改进RefineDet的TCB模块，双向聚合特征谱</li></ul><h3 id="BibTeX"><a href="#BibTeX" class="headerlink" title="BibTeX"></a>BibTeX</h3><figure class="highlight plain"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br><span class="line">8</span><br></pre></td><td class="code"><pre><span class="line">@INPROCEEDINGS&#123;dafs,</span><br><span class="line">  author&#x3D;&#123;S. &#123;Li&#125; and L. &#123;Yang&#125; and J. &#123;Huang&#125; and X. &#123;Hua&#125; and L. &#123;Zhang&#125;&#125;,</span><br><span class="line">  booktitle&#x3D;&#123;International Conference on Computer Vision&#125;, </span><br><span class="line">  title&#x3D;&#123;Dynamic Anchor Feature Selection for Single-Shot Object Detection&#125;, </span><br><span class="line">  year&#x3D;&#123;2019&#125;,</span><br><span class="line">  pages&#x3D;&#123;6608-6617&#125;,</span><br><span class="line">  pdf&#x3D;&#123;http:&#x2F;&#x2F;openaccess.thecvf.com&#x2F;content_ICCV_2019&#x2F;papers&#x2F;Li_Dynamic_Anchor_Feature_Selection_for_Single-Shot_Object_Detection_ICCV_2019_paper.pdf&#125;</span><br><span class="line">&#125;</span><br></pre></td></tr></table></figure><hr>]]></content>
       
       
       <categories>
@@ -536,13 +354,67 @@
       
         <tags>
             
-            <tag> fusion </tag>
+            <tag> detection </tag>
             
-            <tag> NeurIPS </tag>
+            <tag> ICCV </tag>
+            
+        </tags>
+      
+    </entry>
+    
+    
+    
+    <entry>
+      <title>DetNet</title>
+      <link href="posts/a562ac22.html"/>
+      <url>posts/a562ac22.html</url>
+      
+        <content type="html"><![CDATA[<p></p><span id="more"></span><h3 id="问题"><a href="#问题" class="headerlink" title="问题"></a>问题</h3><ul><li>分类网络的设计准则（大幅降采样）不适合检测任务（定位）</li><li>RPN等网络虽然进行了优化，但仍有一些问题<ul><li>backbone的阶段（stage）数和检测的阶段数不同</li><li>由于深层特征谱的大步长，大目标定位不准确</li><li>小目标在降采样过程中消失</li></ul></li></ul><h3 id="方案"><a href="#方案" class="headerlink" title="方案"></a>方案</h3><ul><li><p>设计新的backbone</p><ul><li>stage数和检测相同</li><li>深层stage保持较高的分辨率</li><li>通过扩张残差块增大感受野</li></ul><p><img src="/posts/a562ac22/overview.png" alt="overview"><br><img src="/posts/a562ac22/detail.png" alt="detail"></p></li></ul><h3 id="缺陷"><a href="#缺陷" class="headerlink" title="缺陷"></a>缺陷</h3><ul><li>仍需ImageNet预训练</li></ul><h3 id="代码"><a href="#代码" class="headerlink" title="代码"></a>代码</h3><ul><li><a href="https://github.com/zengarden/DetNet">https://github.com/zengarden/DetNet</a></li></ul><h3 id="BibTeX"><a href="#BibTeX" class="headerlink" title="BibTeX"></a>BibTeX</h3><figure class="highlight plain"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br><span class="line">8</span><br></pre></td><td class="code"><pre><span class="line">@InProceedings&#123;detnet,</span><br><span class="line">  author&#x3D;&#123;Li, Zeming and Peng, Chao and Yu, Gang and Zhang, Xiangyu and Deng, Yangdong and Sun, Jian&#125;,</span><br><span class="line">  title&#x3D;&#123;DetNet: Design Backbone for Object Detection&#125;,</span><br><span class="line">  booktitle&#x3D;&#123;European Conference on Computer Vision&#125;,</span><br><span class="line">  pages&#x3D;&#123;339--354&#125;,</span><br><span class="line">  year&#x3D;&#123;2018&#125;,</span><br><span class="line">  pdf&#x3D;&#123;https:&#x2F;&#x2F;eccv2018.org&#x2F;openaccess&#x2F;content_ECCV_2018&#x2F;papers&#x2F;Zeming_Li_DetNet_Design_Backbone_ECCV_2018_paper.pdf&#125;</span><br><span class="line">&#125;</span><br></pre></td></tr></table></figure><hr>]]></content>
+      
+      
+      <categories>
+          
+          <category> Paper </category>
+          
+      </categories>
+      
+      
+        <tags>
             
             <tag> detection </tag>
             
             <tag> backbone </tag>
+            
+            <tag> ECCV </tag>
+            
+        </tags>
+      
+    </entry>
+    
+    
+    
+    <entry>
+      <title>LRFNet</title>
+      <link href="posts/127af3.html"/>
+      <url>posts/127af3.html</url>
+      
+        <content type="html"><![CDATA[<p></p><span id="more"></span><h3 id="问题"><a href="#问题" class="headerlink" title="问题"></a>问题</h3><ul><li>现有多数目标检测网络是从ImageNet预训练的分类网络微调的，但是检测和分类任务对平移的敏感性要求不同，预训练网络和检测任务之间有一定差异，用分类预训练网络不是最优的。但是从头开始训练检测网络需要大量时间。</li></ul><h3 id="贡献"><a href="#贡献" class="headerlink" title="贡献"></a>贡献</h3><ul><li>用分类预训练网络做主体，外接一路从头训练的小网络，结合两者特征</li></ul><p><img src="/posts/127af3/LRF.png"></p><h3 id="BibTeX"><a href="#BibTeX" class="headerlink" title="BibTeX"></a>BibTeX</h3><figure class="highlight plain"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br><span class="line">8</span><br></pre></td><td class="code"><pre><span class="line">@INPROCEEDINGS&#123;lrfnet,</span><br><span class="line">  author&#x3D;&#123;T. &#123;Wang&#125; and R. M. &#123;Anwer&#125; and H. &#123;Cholakkal&#125; and F. S. &#123;Khan&#125; and Y. &#123;Pang&#125; and L. &#123;Shao&#125;&#125;,</span><br><span class="line">  booktitle&#x3D;&#123;International Conference on Computer Vision&#125;, </span><br><span class="line">  title&#x3D;&#123;Learning Rich Features at High-Speed for Single-Shot Object Detection&#125;, </span><br><span class="line">  year&#x3D;&#123;2019&#125;,</span><br><span class="line">  pages&#x3D;&#123;1971-1980&#125;,</span><br><span class="line">  pdf&#x3D;&#123;http:&#x2F;&#x2F;openaccess.thecvf.com&#x2F;content_ICCV_2019&#x2F;papers&#x2F;Wang_Learning_Rich_Features_at_High-Speed_for_Single-Shot_Object_Detection_ICCV_2019_paper.pdf&#125;</span><br><span class="line">&#125;</span><br></pre></td></tr></table></figure><hr>]]></content>
+      
+      
+      <categories>
+          
+          <category> Paper </category>
+          
+      </categories>
+      
+      
+        <tags>
+            
+            <tag> detection </tag>
+            
+            <tag> ICCV </tag>
+            
+            <tag> scratch </tag>
             
         </tags>
       
@@ -586,11 +458,42 @@
     
     
     <entry>
-      <title>DetNet</title>
-      <link href="posts/a562ac22.html"/>
-      <url>posts/a562ac22.html</url>
+      <title>VrR-VG</title>
+      <link href="posts/bdcfc59d.html"/>
+      <url>posts/bdcfc59d.html</url>
       
-        <content type="html"><![CDATA[<p></p><span id="more"></span><h3 id="问题"><a href="#问题" class="headerlink" title="问题"></a>问题</h3><ul><li>分类网络的设计准则（大幅降采样）不适合检测任务（定位）</li><li>RPN等网络虽然进行了优化，但仍有一些问题<ul><li>backbone的阶段（stage）数和检测的阶段数不同</li><li>由于深层特征谱的大步长，大目标定位不准确</li><li>小目标在降采样过程中消失</li></ul></li></ul><h3 id="方案"><a href="#方案" class="headerlink" title="方案"></a>方案</h3><ul><li><p>设计新的backbone</p><ul><li>stage数和检测相同</li><li>深层stage保持较高的分辨率</li><li>通过扩张残差块增大感受野</li></ul><p><img src="/posts/a562ac22/overview.png" alt="overview"><br><img src="/posts/a562ac22/detail.png" alt="detail"></p></li></ul><h3 id="缺陷"><a href="#缺陷" class="headerlink" title="缺陷"></a>缺陷</h3><ul><li>仍需ImageNet预训练</li></ul><h3 id="代码"><a href="#代码" class="headerlink" title="代码"></a>代码</h3><ul><li><a href="https://github.com/zengarden/DetNet">https://github.com/zengarden/DetNet</a></li></ul><h3 id="BibTeX"><a href="#BibTeX" class="headerlink" title="BibTeX"></a>BibTeX</h3><figure class="highlight plain"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br><span class="line">8</span><br></pre></td><td class="code"><pre><span class="line">@InProceedings&#123;detnet,</span><br><span class="line">  author&#x3D;&#123;Li, Zeming and Peng, Chao and Yu, Gang and Zhang, Xiangyu and Deng, Yangdong and Sun, Jian&#125;,</span><br><span class="line">  title&#x3D;&#123;DetNet: Design Backbone for Object Detection&#125;,</span><br><span class="line">  booktitle&#x3D;&#123;European Conference on Computer Vision&#125;,</span><br><span class="line">  pages&#x3D;&#123;339--354&#125;,</span><br><span class="line">  year&#x3D;&#123;2018&#125;,</span><br><span class="line">  pdf&#x3D;&#123;https:&#x2F;&#x2F;eccv2018.org&#x2F;openaccess&#x2F;content_ECCV_2018&#x2F;papers&#x2F;Zeming_Li_DetNet_Design_Backbone_ECCV_2018_paper.pdf&#125;</span><br><span class="line">&#125;</span><br></pre></td></tr></table></figure><hr>]]></content>
+        <content type="html"><![CDATA[<p></p><span id="more"></span><h3 id="问题"><a href="#问题" class="headerlink" title="问题"></a>问题</h3><ul><li>现有的关系预测模型会拟合静态偏差（空间位置、固定搭配等可以从非视觉信息获取的结果）而不是学习视觉信息</li></ul><h3 id="原因"><a href="#原因" class="headerlink" title="原因"></a>原因</h3><ul><li><p>神经网络有强大的从非视觉信息预测的能力</p></li><li><p>空间关系(on、in等)完全可以通过bbox坐标来预测</p></li><li><p>某些关系(wear、ride、has等)可以从语言先验或者统计分析来预测</p><p><img src="/posts/bdcfc59d/distribution2.png"></p></li><li><p>现有数据集有很多上述标签</p><p><img src="/posts/bdcfc59d/distribution1.png"></p></li></ul><h3 id="贡献"><a href="#贡献" class="headerlink" title="贡献"></a>贡献</h3><ul><li><p>新的关系数据集<a href="http://vrr-vg.com/">VrR-VG</a></p></li><li><p>关系感知模型</p><ul><li><p>可以通过坐标、类别等信息来预测的关系是视觉无关的</p></li><li><p>Visual Discriminator: VD-Net通过坐标、类别、词汇等非视觉信息来预测关系</p></li><li><p>用VD-Net无法准确预测的关系标签来训练视觉感知模型并用于VQA等任务</p></li></ul></li></ul><h3 id="BibTeX"><a href="#BibTeX" class="headerlink" title="BibTeX"></a>BibTeX</h3><figure class="highlight plain"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br><span class="line">8</span><br></pre></td><td class="code"><pre><span class="line">@INPROCEEDINGS&#123;vrrvg,</span><br><span class="line">  author&#x3D;&#123;Y. &#123;Liang&#125; and Y. &#123;Bai&#125; and W. &#123;Zhang&#125; and X. &#123;Qian&#125; and L. &#123;Zhu&#125; and T. &#123;Mei&#125;&#125;,</span><br><span class="line">  booktitle&#x3D;&#123;International Conference on Computer Vision&#125;, </span><br><span class="line">  title&#x3D;&#123;VrR-VG: Refocusing Visually-Relevant Relationships&#125;, </span><br><span class="line">  year&#x3D;&#123;2019&#125;,</span><br><span class="line">  pages&#x3D;&#123;10402-10411&#125;,</span><br><span class="line">  pdf&#x3D;&#123;http:&#x2F;&#x2F;openaccess.thecvf.com&#x2F;content_ICCV_2019&#x2F;papers&#x2F;Liang_VrR-VG_Refocusing_Visually-Relevant_Relationships_ICCV_2019_paper.pdf&#125;</span><br><span class="line">&#125;</span><br></pre></td></tr></table></figure><hr>]]></content>
+      
+      
+      <categories>
+          
+          <category> Paper </category>
+          
+      </categories>
+      
+      
+        <tags>
+            
+            <tag> ICCV </tag>
+            
+            <tag> Visual Cognition </tag>
+            
+            <tag> relationship </tag>
+            
+            <tag> dataset </tag>
+            
+        </tags>
+      
+    </entry>
+    
+    
+    
+    <entry>
+      <title>ClusDet</title>
+      <link href="posts/e77010ad.html"/>
+      <url>posts/e77010ad.html</url>
+      
+        <content type="html"><![CDATA[<p></p><span id="more"></span><h3 id="问题"><a href="#问题" class="headerlink" title="问题"></a>问题</h3><ul><li><p>输入分辨率高</p></li><li><p>目标小</p></li><li><p>目标稀疏且非均匀分布</p></li></ul><h3 id="方案"><a href="#方案" class="headerlink" title="方案"></a>方案</h3><ul><li>检测目标聚集区域，并从该区域内检测，将结果与全局检测结合</li></ul><h3 id="BibTeX"><a href="#BibTeX" class="headerlink" title="BibTeX"></a>BibTeX</h3><figure class="highlight plain"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br><span class="line">8</span><br></pre></td><td class="code"><pre><span class="line">@INPROCEEDINGS&#123;clusdet,</span><br><span class="line">  author&#x3D;&#123;F. &#123;Yang&#125; and H. &#123;Fan&#125; and P. &#123;Chu&#125; and E. &#123;Blasch&#125; and H. &#123;Ling&#125;&#125;,</span><br><span class="line">  booktitle&#x3D;&#123;International Conference on Computer Vision&#125;, </span><br><span class="line">  title&#x3D;&#123;Clustered Object Detection in Aerial Images&#125;, </span><br><span class="line">  year&#x3D;&#123;2019&#125;,</span><br><span class="line">  pages&#x3D;&#123;8310-8319&#125;,</span><br><span class="line">  pdf&#x3D;&#123;http:&#x2F;&#x2F;openaccess.thecvf.com&#x2F;content_ICCV_2019&#x2F;papers&#x2F;Yang_Clustered_Object_Detection_in_Aerial_Images_ICCV_2019_paper.pdf&#125;</span><br><span class="line">&#125;</span><br></pre></td></tr></table></figure><hr>]]></content>
       
       
       <categories>
@@ -604,9 +507,9 @@
             
             <tag> detection </tag>
             
-            <tag> backbone </tag>
+            <tag> ICCV </tag>
             
-            <tag> ECCV </tag>
+            <tag> aerial </tag>
             
         </tags>
       
@@ -615,11 +518,11 @@
     
     
     <entry>
-      <title>SparseNet</title>
-      <link href="posts/edc10435.html"/>
-      <url>posts/edc10435.html</url>
+      <title>ThunderNet</title>
+      <link href="posts/bd9092df.html"/>
+      <url>posts/bd9092df.html</url>
       
-        <content type="html"><![CDATA[<script type="text/javascript" src="https://cdn.jsdelivr.net/npm/mathjax@3/es5/tex-svg.js?config=default"></script><p></p><span id="more"></span><h3 id="问题"><a href="#问题" class="headerlink" title="问题"></a>问题</h3><ul><li>ResNet型密集聚合（+）：聚合后的特征不可分解，深层特征稀释或破坏浅层特征</li><li>DenseNet型密集聚合（concat）：参数以\(O(N^2)\)增加，消耗大量参数和运算来处理同一块特征</li></ul><h3 id="方案"><a href="#方案" class="headerlink" title="方案"></a>方案</h3><ul><li>保留短梯度路径（skip connection）的优势，但避免类ResNet、DenseNet的稠密聚合</li><li>\(y_l=F_l(\bigotimes(y_{l-c^0},y_{l-c^1},y_{l-c^2}…y_{l-c^k}))\)</li></ul><p><img src="/posts/edc10435/SparseNet.png"></p><h3 id="相关："><a href="#相关：" class="headerlink" title="相关："></a>相关：</h3><ul><li><a href="http://blinging/posts/8a14a4e3.html">PRN</a></li><li><a href="http://blinging/posts/b956e9d5.html">CSPNet</a></li></ul><h3 id="BibTeX"><a href="#BibTeX" class="headerlink" title="BibTeX"></a>BibTeX</h3><figure class="highlight plain"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br><span class="line">8</span><br><span class="line">9</span><br><span class="line">10</span><br></pre></td><td class="code"><pre><span class="line">@InProceedings&#123;sparsenet,</span><br><span class="line">  author&#x3D;&#123;Zhu, Ligeng and Deng, Ruizhi and Maire, Michael and Deng, Zhiwei and Mori, Greg and Tan, Ping&#125;,</span><br><span class="line">  title&#x3D;&#123;Sparsely Aggregated Convolutional Networks&#125;,</span><br><span class="line">  booktitle&#x3D;&#123;European Conference on Computer Vision&#125;,</span><br><span class="line">  year&#x3D;&#123;2018&#125;,</span><br><span class="line">  pages&#x3D;&#123;192--208&#125;,</span><br><span class="line">  pdf&#x3D;&#123;https:&#x2F;&#x2F;openaccess.thecvf.com&#x2F;content_ECCV_2018&#x2F;papers&#x2F;Ligeng_Zhu_Sparsely_Aggregated_Convolutional_ECCV_2018_paper.pdf&#125;</span><br><span class="line">&#125;</span><br><span class="line"></span><br><span class="line"></span><br></pre></td></tr></table></figure><hr>]]></content>
+        <content type="html"><![CDATA[<p></p><span id="more"></span><h3 id="问题"><a href="#问题" class="headerlink" title="问题"></a>问题</h3><ul><li>目前没有轻量级二阶段检测模型</li></ul><h3 id="方案"><a href="#方案" class="headerlink" title="方案"></a>方案</h3><ul><li>backbone<ul><li>着眼运行效率和感受野，以ShuffleNet v2为基础进行修改，将3x3的DW Conv全部改成5x5的DW Conv</li></ul></li><li>detection head<ul><li><p>设计Context Enhancement Module以增大感受野</p><p><img src="/posts/bd9092df/CEM.jpg" alt="Fig. 1 CEM"></p></li><li><p>设计Spacial Attention Module改善用于PSRoI align的特征</p><p><img src="/posts/bd9092df/SAM.jpg" alt="Fig. 2 SAM"></p></li><li><p>用5x5DWConv+1x1Conv取代3x3Conv</p></li></ul></li></ul><p><img src="/posts/bd9092df/ThunderNet.jpg" alt="Fig. 3 网络结构"></p><h3 id="BibTeX"><a href="#BibTeX" class="headerlink" title="BibTeX"></a>BibTeX</h3><figure class="highlight plain"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br><span class="line">8</span><br></pre></td><td class="code"><pre><span class="line">@INPROCEEDINGS&#123;thundernet,</span><br><span class="line">  author&#x3D;&#123;Z. &#123;Qin&#125; and Z. &#123;Li&#125; and Z. &#123;Zhang&#125; and Y. &#123;Bao&#125; and G. &#123;Yu&#125; and Y. &#123;Peng&#125; and J. &#123;Sun&#125;&#125;,</span><br><span class="line">  booktitle&#x3D;&#123;International Conference on Computer Vision&#125;, </span><br><span class="line">  title&#x3D;&#123;ThunderNet: Towards Real-Time Generic Object Detection on Mobile Devices&#125;, </span><br><span class="line">  year&#x3D;&#123;2019&#125;,</span><br><span class="line">  pages&#x3D;&#123;6717-6726&#125;,</span><br><span class="line">  pdf&#x3D;&#123;http:&#x2F;&#x2F;openaccess.thecvf.com&#x2F;content_ICCV_2019&#x2F;papers&#x2F;Qin_ThunderNet_Towards_Real-Time_Generic_Object_Detection_on_Mobile_Devices_ICCV_2019_paper.pdf&#125;</span><br><span class="line">&#125;</span><br></pre></td></tr></table></figure><hr>]]></content>
       
       
       <categories>
@@ -631,11 +534,79 @@
       
         <tags>
             
+            <tag> detection </tag>
+            
             <tag> light-weight </tag>
+            
+            <tag> two-stage </tag>
+            
+            <tag> ICCV </tag>
             
             <tag> backbone </tag>
             
-            <tag> ECCV </tag>
+            <tag> attention </tag>
+            
+        </tags>
+      
+    </entry>
+    
+    
+    
+    <entry>
+      <title>CARAFE</title>
+      <link href="posts/ed54d5da.html"/>
+      <url>posts/ed54d5da.html</url>
+      
+        <content type="html"><![CDATA[<p></p><span id="more"></span><h3 id="目的"><a href="#目的" class="headerlink" title="目的"></a>目的</h3><ul><li>解决检测、分割等任务中的上采样问题</li></ul><h3 id="特性"><a href="#特性" class="headerlink" title="特性"></a>特性</h3><ul><li>大感受野</li><li>内容感知</li><li>轻量级</li></ul><h3 id="方案"><a href="#方案" class="headerlink" title="方案"></a>方案</h3><p><img src="/posts/ed54d5da/CARAFE.png"></p><h3 id="代码"><a href="#代码" class="headerlink" title="代码"></a>代码</h3><ul><li><a href="https://github.com/open-mmlab/mmdetection">https://github.com/open-mmlab/mmdetection</a></li></ul><h3 id="BibTeX"><a href="#BibTeX" class="headerlink" title="BibTeX"></a>BibTeX</h3><figure class="highlight plain"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br><span class="line">8</span><br></pre></td><td class="code"><pre><span class="line">@INPROCEEDINGS&#123;carafe,</span><br><span class="line">  author&#x3D;&#123;J. &#123;Wang&#125; and K. &#123;Chen&#125; and R. &#123;Xu&#125; and Z. &#123;Liu&#125; and C. C. &#123;Loy&#125; and D. &#123;Lin&#125;&#125;,</span><br><span class="line">  booktitle&#x3D;&#123;International Conference on Computer Vision&#125;, </span><br><span class="line">  title&#x3D;&#123;CARAFE: Content-Aware ReAssembly of FEatures&#125;, </span><br><span class="line">  year&#x3D;&#123;2019&#125;,</span><br><span class="line">  pages&#x3D;&#123;3007-3016&#125;,</span><br><span class="line">  pdf&#x3D;&#123;http:&#x2F;&#x2F;openaccess.thecvf.com&#x2F;content_ICCV_2019&#x2F;papers&#x2F;Wang_CARAFE_Content-Aware_ReAssembly_of_FEatures_ICCV_2019_paper.pdf&#125;</span><br><span class="line">&#125;</span><br></pre></td></tr></table></figure><hr>]]></content>
+      
+      
+      <categories>
+          
+          <category> Paper </category>
+          
+      </categories>
+      
+      
+        <tags>
+            
+            <tag> detection </tag>
+            
+            <tag> light-weight </tag>
+            
+            <tag> ICCV </tag>
+            
+            <tag> upsample </tag>
+            
+        </tags>
+      
+    </entry>
+    
+    
+    
+    <entry>
+      <title>FishNet</title>
+      <link href="posts/e04a0e51.html"/>
+      <url>posts/e04a0e51.html</url>
+      
+        <content type="html"><![CDATA[<p></p><span id="more"></span><h3 id="问题"><a href="#问题" class="headerlink" title="问题"></a>问题</h3><ul><li>目前区域/像素级别的任务都在使用分类预训练网络作为backbone，而没有一个专门设计的backbone</li><li>目前的工作无法直接地将梯度反传到浅层</li></ul><h3 id="方案"><a href="#方案" class="headerlink" title="方案"></a>方案</h3><ul><li><p>提出了FishNet结构（降采样-上采样-降采样结构）</p><p><img src="/posts/e04a0e51/FishNet.jpg" alt="FishNet"></p></li><li><p>对ResBlock进行修改，取消了identity mapping中的卷积，降采样/增加通道放在外部</p><p><img src="/posts/e04a0e51/resblock.jpg" alt="ResBlock"></p></li></ul><h3 id="相关"><a href="#相关" class="headerlink" title="相关"></a>相关</h3><ul><li>《Stacked Hourglass Networks for Human Pose Estimation》</li><li>《DFANet: Deep Feature Aggregation for Real-Time Semantic Segmentation》</li><li>《M2Det: A Single-Shot Object Detector based on Multi-Level Feature Pyramid Network》</li><li>《CBNet: A Novel Composite Backbone Network Architecture for Object Detection》</li></ul><h3 id="BibTeX"><a href="#BibTeX" class="headerlink" title="BibTeX"></a>BibTeX</h3><figure class="highlight plain"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br><span class="line">8</span><br><span class="line">9</span><br><span class="line">10</span><br></pre></td><td class="code"><pre><span class="line">@inproceedings&#123;fishnet,</span><br><span class="line">  author &#x3D; &#123;Sun, Shuyang and Pang, Jiangmiao and Shi, Jianping and Yi, Shuai and Ouyang, Wanli&#125;,</span><br><span class="line">  booktitle &#x3D; &#123;Advances in Neural Information Processing Systems&#125;, </span><br><span class="line">  title&#x3D;&#123;FishNet: A Versatile Backbone for Image, Region, and Pixel Level Prediction&#125;,</span><br><span class="line">  volume &#x3D; &#123;31&#125;,</span><br><span class="line">  year &#x3D; &#123;2018&#125;,</span><br><span class="line">  pages &#x3D; &#123;754--764&#125;,</span><br><span class="line">  pdf&#x3D;&#123;https:&#x2F;&#x2F;proceedings.neurips.cc&#x2F;paper&#x2F;2018&#x2F;file&#x2F;75fc093c0ee742f6dddaa13fff98f104-Paper.pdf&#125;</span><br><span class="line">&#125;</span><br><span class="line"></span><br></pre></td></tr></table></figure><hr>]]></content>
+      
+      
+      <categories>
+          
+          <category> Paper </category>
+          
+      </categories>
+      
+      
+        <tags>
+            
+            <tag> fusion </tag>
+            
+            <tag> NeurIPS </tag>
+            
+            <tag> detection </tag>
+            
+            <tag> backbone </tag>
             
         </tags>
       
@@ -667,6 +638,35 @@
             <tag> two-stage </tag>
             
             <tag> cascade </tag>
+            
+        </tags>
+      
+    </entry>
+    
+    
+    
+    <entry>
+      <title>TridentNet</title>
+      <link href="posts/92fd9c72.html"/>
+      <url>posts/92fd9c72.html</url>
+      
+        <content type="html"><![CDATA[<p></p><span id="more"></span><h3 id="贡献"><a href="#贡献" class="headerlink" title="贡献"></a>贡献</h3><ul><li><p>通过对backbone网络的部分层设置不同的扩张率，探索了感受野对目标检测效果的影响</p><ul><li><p>感受野需要和目标尺度相匹配</p></li><li><p>有效感受野小于理论感受野</p></li><li><p>感受野需要在大目标和小目标之间找到平衡</p></li></ul></li><li><p>权重共享，扩张率不同的多条分支生成不同感受野的特征以应对不同尺度的目标</p><p><img src="/posts/92fd9c72/TridentNet.png"></p></li><li><p>类似SNIP，采用scale-aware的训练方法</p></li><li><p>可以使用主分支检测达到近似三分支的精度(扩展尺度范围为0到∞相当于放弃了scale-aware训练策略？)</p></li></ul><h3 id="BibTeX"><a href="#BibTeX" class="headerlink" title="BibTeX"></a>BibTeX</h3><figure class="highlight plain"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br><span class="line">8</span><br></pre></td><td class="code"><pre><span class="line">@INPROCEEDINGS&#123;tridentnet,</span><br><span class="line">  author&#x3D;&#123;Y. &#123;Li&#125; and Y. &#123;Chen&#125; and N. &#123;Wang&#125; and Z. &#123;Zhang&#125;&#125;,</span><br><span class="line">  booktitle&#x3D;&#123;International Conference on Computer Vision&#125;, </span><br><span class="line">  title&#x3D;&#123;Scale-Aware Trident Networks for Object Detection&#125;, </span><br><span class="line">  year&#x3D;&#123;2019&#125;,</span><br><span class="line">  pages&#x3D;&#123;6053-6062&#125;,</span><br><span class="line">  pdf&#x3D;&#123;http:&#x2F;&#x2F;openaccess.thecvf.com&#x2F;content_ICCV_2019&#x2F;papers&#x2F;Li_Scale-Aware_Trident_Networks_for_Object_Detection_ICCV_2019_paper.pdf&#125;</span><br><span class="line">&#125;</span><br></pre></td></tr></table></figure><hr>]]></content>
+      
+      
+      <categories>
+          
+          <category> Paper </category>
+          
+      </categories>
+      
+      
+        <tags>
+            
+            <tag> detection </tag>
+            
+            <tag> ICCV </tag>
+            
+            <tag> scale </tag>
             
         </tags>
       
