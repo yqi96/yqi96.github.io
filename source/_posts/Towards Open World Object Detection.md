@@ -61,7 +61,7 @@ $$
 反而是所谓的by-product，显式的open set learning有利于incremental learning，比较有意思。
 
 
->@inproceedings{ore,
+>@inproceedings{owod,
 >  title={Towards Open World Object Detection},
 >  author={K J Joseph and Salman Khan and Fahad Shahbaz Khan and Vineeth N Balasubramanian},
 >  booktitle={Conference on Computer Vision and Pattern Recognition},
