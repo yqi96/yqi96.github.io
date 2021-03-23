@@ -5,7 +5,9 @@ tags:
   - loss
 abbrlink: 6deaeeb1
 date: 2020-10-21 00:00:00
+description: <p></p>
 ---
+
 <script type="text/javascript" src="https://cdn.mathjax.org/mathjax/latest/MathJax.js?config=TeX-AMS-MML_HTMLorMML"></script>
 <script type="text/x-mathjax-config">
 MathJax.Hub.Config({
@@ -14,8 +16,6 @@ MathJax.Hub.Config({
          SVG: { linebreaks: { automatic: true } }
 });
 </script>
-<p></p>
-<!-- more -->
 
 ### 理论
 
@@ -85,4 +85,5 @@ class SoftmaxCrossEntropyLoss(nn.Module):
         
         return xent
 ```
+
 ---

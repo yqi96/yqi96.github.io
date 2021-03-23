@@ -4,9 +4,8 @@ categories: Tool
 tags: Hexo
 abbrlink: 1b0927de
 date: 2020-10-16 00:22:01
+description: <p></p>
 ---
-<p></p>
-<!-- more -->
 
 ### 基础功能
   ```sh
@@ -23,7 +22,7 @@ date: 2020-10-16 00:22:01
   rm -rf source
   rm -rf scaffolds
   git clone git@github.com:yqi96/yqi96.github.io.git ./tmp
-  cp -r tmp/.* . && rm -rf tmp
+  cp -r tmp/* . && rm -rf tmp
   git submodule update --init --recursive
   ```
 

@@ -7,11 +7,9 @@ tags:
   - backbone
 abbrlink: edc10435
 date: 2020-09-12 14:02:04
+description: <p></p>
 ---
 <script type="text/javascript" src="https://cdn.mathjax.org/mathjax/latest/MathJax.js?config=TeX-AMS-MML_HTMLorMML"></script>
-
-<p></p>
-<!-- more -->
 
 ### 问题
 

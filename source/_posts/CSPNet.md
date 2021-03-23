@@ -7,9 +7,8 @@ tags:
   - backbone
 abbrlink: b956e9d5
 date: 2020-06-16 00:00:00
+description: <p></p>
 ---
-<p></p>
-<!-- more -->
 
 ### 贡献
 

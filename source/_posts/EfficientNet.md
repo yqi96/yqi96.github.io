@@ -7,9 +7,8 @@ tags:
   - backbone
 abbrlink: a8875d51
 date: 2020-4-12 14:12:09
+description: <p></p>
 ---
-<p></p>
-<!-- more -->
 
 ### 贡献
 基于以下发现，探索最优的宽度、深度、分辨率配置

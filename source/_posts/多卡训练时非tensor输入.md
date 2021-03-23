@@ -1,13 +1,12 @@
 ---
 title: 多卡训练时非tensor输入
 categories: 代码块
-abbrlink: 5a33d4b6
-date: 2021-01-18 22:24:24
 tags:
     - Pytorch
+abbrlink: 5a33d4b6
+date: 2021-01-18 22:24:24
+description: <p></p>
 ---
-<p></p>
-<!-- more -->
 
 DataParallel类的forward中通过scatter方法把输入分配到各显卡，并行计算后通过gather方法进行整合。scatter只实现了对torch.Tensor的按batch维度切分，tuple、list、dict等类则进行递归，其他类型保持不变。
 
