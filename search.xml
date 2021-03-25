@@ -4,33 +4,6 @@
   
     
     <entry>
-      <title>iTAML</title>
-      <link href="posts/5d8aa1d0.html"/>
-      <url>posts/5d8aa1d0.html</url>
-      
-        <content type="html"><![CDATA[<blockquote><p>@INPROCEEDINGS{itaml,<br> author={J. {Rajasegaran} and S. {Khan} and M. {Hayat} and F. S. {Khan} and M. {Shah}},<br> booktitle={Conference on Computer Vision and Pattern Recognition},<br> title={iTAML: An Incremental Task-Agnostic Meta-learning Approach},<br> year={2020},<br> pages={13585-13594},<br> pdf={<code>https://openaccess.thecvf.com/content_CVPR_2020/papers/Rajasegaran_iTAML_An_Incremental_Task-Agnostic_Meta-learning_Approach_CVPR_2020_paper.pdf</code>}}</p></blockquote><hr>]]></content>
-      
-      
-      <categories>
-          
-          <category> Paper </category>
-          
-      </categories>
-      
-      
-        <tags>
-            
-            <tag> CVPR </tag>
-            
-            <tag> incremental learning </tag>
-            
-        </tags>
-      
-    </entry>
-    
-    
-    
-    <entry>
       <title>Towards Open World Object Detection</title>
       <link href="posts/49a43533.html"/>
       <url>posts/49a43533.html</url>
