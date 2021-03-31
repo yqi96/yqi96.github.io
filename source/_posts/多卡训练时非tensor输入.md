@@ -1,6 +1,6 @@
 ---
 title: 多卡训练时非tensor输入
-categories: 代码块
+categories: Code
 tags:
     - Pytorch
 abbrlink: 5a33d4b6

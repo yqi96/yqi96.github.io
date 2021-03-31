@@ -8,8 +8,9 @@ subtitle: ''
 description: ''
 keywords:
 author: yqi
-language: zh-CN
-timezone: ''
+# language: zh-CN
+language: en
+timezone: 'PRC'
 
 # URL
 ## If your site is put in a subdirectory, set url as 'http://example.com/child' and root as '/child/'

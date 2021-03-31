@@ -1,6 +1,6 @@
 ---
 title: DataLoader无限循环
-categories: 代码块
+categories: Code
 tags:
   - Pytorch
 abbrlink: 52f897dd
