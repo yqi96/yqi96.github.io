@@ -8,7 +8,7 @@
       <link href="/posts/49a43533.html"/>
       <url>/posts/49a43533.html</url>
       
-        <content type="html"><![CDATA[<script type="text/javascript" src="https://cdn.mathjax.org/mathjax/latest/MathJax.js?config=TeX-AMS-MML_HTMLorMML"></script><h3 id="任务"><a href="#任务" class="headerlink" title="任务"></a>任务</h3><ol><li>open set learning——能识别unknown类的目标</li><li>incremental learning——能通过后续标注在不忘记旧类的前提下学到新类</li></ol><h3 id="方法"><a href="#方法" class="headerlink" title="方法"></a>方法</h3><p><img src="/posts/49a43533/framework.png" alt="Fig. 1 整体框架"></p><h4 id="Contrastive-Clustering"><a href="#Contrastive-Clustering" class="headerlink" title="Contrastive Clustering"></a>Contrastive Clustering</h4><p>为了学到合适的特征空间（同类聚集，异类远离），添加contrastive loss：</p><script type="math/tex; mode=display">\begin{equation}\mathcal{L}_{cont}(f_c)=\sum_{i=0}^C l(f_c, p_i), where \\l(f_c, p_i)=\begin{cases}\mathcal{D}(f_c, p_i), & i=c\\\max\{0, \Delta-\mathcal{D}(f_c, p_i)\}, & otherwise\end{cases}\end{equation}</script><p>其中\(p_i\)为各类的特征均值（包括unknown），随训练更新，\(f_c\)为\(c\)类的特征，\(\mathcal{D}\)为欧氏距离，\(\Delta\)为常数。</p><h4 id="Auto-labelling-Unknowns-with-RPN"><a href="#Auto-labelling-Unknowns-with-RPN" class="headerlink" title="Auto-labelling Unknowns with RPN"></a>Auto-labelling Unknowns with RPN</h4><p>利用RPN所产生的false positive作为unknown类的特征用于上文\(p<em>i\)的更新以及\(\mathcal{L}</em>{cont}\)的计算。false positive根据置信度降序排序，并取top-1。</p><h4 id="Energy-Based-Unknown-Identifier"><a href="#Energy-Based-Unknown-Identifier" class="headerlink" title="Energy Based Unknown Identifier"></a>Energy Based Unknown Identifier</h4><p>用于推理阶段的unknown类决策。定义了一个能量函数：</p><script type="math/tex; mode=display">\begin{equation}E(f;g)=-T\log\sum_{i=1}^C\exp(\frac{g_i(f)}{T})\end{equation}</script><p>其中\(g_i(f)\)是第\(i\)类的logit，\(T\)是温度常数。</p><p>统计了known类和unknown类的\(E(f|g)\)取值分布，用韦伯分布来拟合，分别为\(\xi<em>{kn}(f)\)和\(\xi</em>{unk}(f)\)。用\(\xi<em>{kn}(f)&lt;\xi</em>{unk}(f)\)作为unknown类的判别条件。</p><p>能量函数的使用基于Contrastive Clustering已经令unknown类的特征远离known类的特征，这样用unknown类的特征计算的known类的logits相比known类的特征计算的known类的logits整体分布上有差异，呈现Fig. 2状。对两个分布函数的拟合完全没必要，只需要B点的横坐标即可。且实际只要A、B两点的横坐标接近，用什么分布拟合都无所谓。</p><p><img src="/posts/49a43533/dist.png" alt="Fig. 2 known和unknown的能量分布"></p><h4 id="Alleviating-Forgetting"><a href="#Alleviating-Forgetting" class="headerlink" title="Alleviating Forgetting"></a>Alleviating Forgetting</h4><p>看起来就是incremental learning常规的一套。</p><h3 id="结论"><a href="#结论" class="headerlink" title="结论"></a>结论</h3><p>开放世界目标检测任务的提出以及本文的方法意义不大。从实验设计上看，task2到task4不是few-shot learning，并不适用于online learning。而且全文除了用RPN来生成unknown的伪标签，都跟目标检测没什么关系。</p><p>反而是所谓的by-product，显式的open set learning有利于incremental learning，比较有意思。</p><blockquote><p>@inproceedings{owod,<br> title={Towards Open World Object Detection},<br> author={K J Joseph and Salman Khan and Fahad Shahbaz Khan and Vineeth N Balasubramanian},<br> booktitle={Conference on Computer Vision and Pattern Recognition},<br> year={2021},<br> pdf={<code>https://arxiv.org/pdf/2103.02603.pdf</code>}}</p></blockquote><hr>]]></content>
+        <content type="html"><![CDATA[<script type="text/javascript" src="https://cdn.mathjax.org/mathjax/latest/MathJax.js?config=TeX-AMS-MML_HTMLorMML"></script><h3 id="任务"><a href="#任务" class="headerlink" title="任务"></a>任务</h3><ol><li>open set learning——能识别unknown类的目标</li><li>incremental learning——能通过后续标注在不忘记旧类的前提下学到新类</li></ol><h3 id="方法"><a href="#方法" class="headerlink" title="方法"></a>方法</h3><p><img src="/posts/49a43533/framework.png" alt="Fig. 1 整体框架"></p><h4 id="Contrastive-Clustering"><a href="#Contrastive-Clustering" class="headerlink" title="Contrastive Clustering"></a>Contrastive Clustering</h4><p>为了学到合适的特征空间（同类聚集，异类远离），添加contrastive loss：</p><script type="math/tex; mode=display">\begin{equation}\mathcal{L}_{cont}(f_c)=\sum_{i=0}^C l(f_c, p_i), where \\l(f_c, p_i)=\begin{cases}\mathcal{D}(f_c, p_i), & i=c\\\max\{0, \Delta-\mathcal{D}(f_c, p_i)\}, & otherwise\end{cases}\end{equation}</script><p>其中\(p_i\)为各类的特征均值（包括unknown），随训练更新，\(f_c\)为\(c\)类的特征，\(\mathcal{D}\)为欧氏距离，\(\Delta\)为常数。</p><h4 id="Auto-labelling-Unknowns-with-RPN"><a href="#Auto-labelling-Unknowns-with-RPN" class="headerlink" title="Auto-labelling Unknowns with RPN"></a>Auto-labelling Unknowns with RPN</h4><p>利用RPN所产生的false positive作为unknown类的特征用于上文\(p_i\)的更新以及\(\mathcal{L}_{cont}\)的计算。false positive根据置信度降序排序，并取top-1。</p><h4 id="Energy-Based-Unknown-Identifier"><a href="#Energy-Based-Unknown-Identifier" class="headerlink" title="Energy Based Unknown Identifier"></a>Energy Based Unknown Identifier</h4><p>用于推理阶段的unknown类决策。定义了一个能量函数：</p><script type="math/tex; mode=display">\begin{equation}E(f;g)=-T\log\sum_{i=1}^C\exp(\frac{g_i(f)}{T})\end{equation}</script><p>其中\(g_i(f)\)是第\(i\)类的logit，\(T\)是温度常数。</p><p>统计了known类和unknown类的\(E(f|g)\)取值分布，用韦伯分布来拟合，分别为\(\xi_{kn}(f)\)和\(\xi_{unk}(f)\)。用\(\xi_{kn}(f)&lt;\xi_{unk}(f)\)作为unknown类的判别条件。</p><p>能量函数的使用基于Contrastive Clustering已经令unknown类的特征远离known类的特征，这样用unknown类的特征计算的known类的logits相比known类的特征计算的known类的logits整体分布上有差异，呈现Fig. 2状。对两个分布函数的拟合完全没必要，只需要B点的横坐标即可。且实际只要A、B两点的横坐标接近，用什么分布拟合都无所谓。</p><p><img src="/posts/49a43533/dist.png" alt="Fig. 2 known和unknown的能量分布"></p><h4 id="Alleviating-Forgetting"><a href="#Alleviating-Forgetting" class="headerlink" title="Alleviating Forgetting"></a>Alleviating Forgetting</h4><p>看起来就是incremental learning常规的一套。</p><h3 id="结论"><a href="#结论" class="headerlink" title="结论"></a>结论</h3><p>开放世界目标检测任务的提出以及本文的方法意义不大。从实验设计上看，task2到task4不是few-shot learning，并不适用于online learning。而且全文除了用RPN来生成unknown的伪标签，都跟目标检测没什么关系。</p><p>反而是所谓的by-product，显式的open set learning有利于incremental learning，比较有意思。</p><blockquote><p>@inproceedings{owod,<br> title={Towards Open World Object Detection},<br> author={K J Joseph and Salman Khan and Fahad Shahbaz Khan and Vineeth N Balasubramanian},<br> booktitle={Conference on Computer Vision and Pattern Recognition},<br> year={2021},<br> pdf={<code>https://arxiv.org/pdf/2103.02603.pdf</code>}}</p></blockquote><hr>]]></content>
       
       
       <categories>
@@ -20,9 +20,9 @@
       
         <tags>
             
-            <tag> CVPR </tag>
-            
             <tag> detection </tag>
+            
+            <tag> CVPR </tag>
             
         </tags>
       
@@ -47,9 +47,9 @@
       
         <tags>
             
-            <tag> CVPR </tag>
-            
             <tag> detection </tag>
+            
+            <tag> CVPR </tag>
             
             <tag> backbone </tag>
             
@@ -143,7 +143,7 @@
       <link href="/posts/6deaeeb1.html"/>
       <url>/posts/6deaeeb1.html</url>
       
-        <content type="html"><![CDATA[<script type="text/javascript" src="https://cdn.mathjax.org/mathjax/latest/MathJax.js?config=TeX-AMS-MML_HTMLorMML"></script><script type="text/x-mathjax-config">MathJax.Hub.Config({  TeX: { equationNumbers: { autoNumber: "AMS" } },  "HTML-CSS": { linebreaks: { automatic: true } },         SVG: { linebreaks: { automatic: true } }});</script><h3 id="理论"><a href="#理论" class="headerlink" title="理论"></a>理论</h3><p>Softmax公式:</p><script type="math/tex; mode=display">\begin{equation}p_i=\frac{e^{l_i}}{\sum_\limits{j}e^{l_j}}\end{equation}</script><p>当logits太大时，指数求和部分会出现上溢，解决方案：</p><script type="math/tex; mode=display">\begin{equation}p_i=\frac{e^{l_i-l_{max}}}{\sum_\limits{j}e^{l_j-l_{max}}}\end{equation}</script><p>\(l<em>j-l</em>{max}\le0\)且必有至少一项为0，因此指数和不会出现上溢，分母不会出现下溢。</p><p>Cross-entropy公式：</p><script type="math/tex; mode=display">\begin{equation}xent=-\sum_\limits{i}y_i\ln p_i\end{equation}</script><p>若\(p_i\)接近0，则\(\ln p_i\)会发生下溢，解决方案：</p><p>将(2)代入(3),有</p><script type="math/tex; mode=display">\begin{equation}\begin{aligned}xent&=-\sum_\limits{i}y_i\ln {(\frac{e^{l_i-l_{max}}}{\sum_\limits{j}e^{l_j-l_{max}}})} \\\\&=-\sum_\limits{i}y_i(l_i-l_{max}-\ln{\sum_\limits{j}e^{l_j-l_{max}}})\\\\&=\sum_\limits{i}y_i(\ln{\sum_\limits{j}e^{l_j-l_{max}}}+l_{max}-l_i)\end{aligned}\end{equation}</script><h3 id="Pytorch简单实现"><a href="#Pytorch简单实现" class="headerlink" title="Pytorch简单实现"></a>Pytorch简单实现</h3><figure class="highlight python"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br><span class="line">8</span><br><span class="line">9</span><br><span class="line">10</span><br><span class="line">11</span><br><span class="line">12</span><br><span class="line">13</span><br><span class="line">14</span><br><span class="line">15</span><br><span class="line">16</span><br><span class="line">17</span><br><span class="line">18</span><br><span class="line">19</span><br><span class="line">20</span><br><span class="line">21</span><br><span class="line">22</span><br></pre></td><td class="code"><pre><span class="line"><span class="keyword">class</span> <span class="title class_">SoftmaxCrossEntropyLoss</span>(nn.Module):</span><br><span class="line">    <span class="keyword">def</span> <span class="title function_">__init__</span>(<span class="params">self, dim=<span class="number">1</span>, mean=<span class="literal">True</span></span>):</span><br><span class="line">        <span class="built_in">super</span>(SoftmaxCrossEntropyLoss, self).__init__()</span><br><span class="line">        self.dim = dim</span><br><span class="line">        self.mean = mean</span><br><span class="line"></span><br><span class="line">    <span class="keyword">def</span> <span class="title function_">forward</span>(<span class="params">self, logits, targets</span>):</span><br><span class="line">        <span class="keyword">if</span> <span class="built_in">len</span>(targets.shape) == <span class="number">1</span>:</span><br><span class="line">            <span class="comment"># one-hot</span></span><br><span class="line">            ones = torch.eye(logits.shape[self.dim]).to(targets.device)</span><br><span class="line">            targets = ones.index_select(<span class="number">0</span>, targets)</span><br><span class="line">        </span><br><span class="line">        max_logit = logits.<span class="built_in">max</span>()</span><br><span class="line">        exp_sum = (logits - max_logit).exp().<span class="built_in">sum</span>(dim=self.dim, keepdim=<span class="literal">True</span>)</span><br><span class="line">        log_softmax = logits - max_logit - exp_sum.log()</span><br><span class="line"></span><br><span class="line">        xent = - (targets * log_softmax).<span class="built_in">sum</span>()</span><br><span class="line">        </span><br><span class="line">        <span class="keyword">if</span> self.mean:</span><br><span class="line">            xent /= logits.shape[<span class="number">0</span>]</span><br><span class="line">        </span><br><span class="line">        <span class="keyword">return</span> xent</span><br></pre></td></tr></table></figure><hr>]]></content>
+        <content type="html"><![CDATA[<script type="text/javascript" src="https://cdn.mathjax.org/mathjax/latest/MathJax.js?config=TeX-AMS-MML_HTMLorMML"></script><script type="text/x-mathjax-config">MathJax.Hub.Config({  TeX: { equationNumbers: { autoNumber: "AMS" } },  "HTML-CSS": { linebreaks: { automatic: true } },         SVG: { linebreaks: { automatic: true } }});</script><h3 id="理论"><a href="#理论" class="headerlink" title="理论"></a>理论</h3><p>Softmax公式:</p><script type="math/tex; mode=display">\begin{equation}p_i=\frac{e^{l_i}}{\sum_\limits{j}e^{l_j}}\end{equation}</script><p>当logits太大时，指数求和部分会出现上溢，解决方案：</p><script type="math/tex; mode=display">\begin{equation}p_i=\frac{e^{l_i-l_{max}}}{\sum_\limits{j}e^{l_j-l_{max}}}\end{equation}</script><p>\(l_j-l_{max}\le0\)且必有至少一项为0，因此指数和不会出现上溢，分母不会出现下溢。</p><p>Cross-entropy公式：</p><script type="math/tex; mode=display">\begin{equation}xent=-\sum_\limits{i}y_i\ln p_i\end{equation}</script><p>若\(p_i\)接近0，则\(\ln p_i\)会发生下溢，解决方案：</p><p>将(2)代入(3),有</p><script type="math/tex; mode=display">\begin{equation}\begin{aligned}xent&=-\sum_\limits{i}y_i\ln {(\frac{e^{l_i-l_{max}}}{\sum_\limits{j}e^{l_j-l_{max}}})} \\\\&=-\sum_\limits{i}y_i(l_i-l_{max}-\ln{\sum_\limits{j}e^{l_j-l_{max}}})\\\\&=\sum_\limits{i}y_i(\ln{\sum_\limits{j}e^{l_j-l_{max}}}+l_{max}-l_i)\end{aligned}\end{equation}</script><h3 id="Pytorch简单实现"><a href="#Pytorch简单实现" class="headerlink" title="Pytorch简单实现"></a>Pytorch简单实现</h3><figure class="highlight python"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br><span class="line">8</span><br><span class="line">9</span><br><span class="line">10</span><br><span class="line">11</span><br><span class="line">12</span><br><span class="line">13</span><br><span class="line">14</span><br><span class="line">15</span><br><span class="line">16</span><br><span class="line">17</span><br><span class="line">18</span><br><span class="line">19</span><br><span class="line">20</span><br><span class="line">21</span><br><span class="line">22</span><br></pre></td><td class="code"><pre><span class="line"><span class="keyword">class</span> <span class="title class_">SoftmaxCrossEntropyLoss</span>(nn.Module):</span><br><span class="line">    <span class="keyword">def</span> <span class="title function_">__init__</span>(<span class="params">self, dim=<span class="number">1</span>, mean=<span class="literal">True</span></span>):</span><br><span class="line">        <span class="built_in">super</span>(SoftmaxCrossEntropyLoss, self).__init__()</span><br><span class="line">        self.dim = dim</span><br><span class="line">        self.mean = mean</span><br><span class="line"></span><br><span class="line">    <span class="keyword">def</span> <span class="title function_">forward</span>(<span class="params">self, logits, targets</span>):</span><br><span class="line">        <span class="keyword">if</span> <span class="built_in">len</span>(targets.shape) == <span class="number">1</span>:</span><br><span class="line">            <span class="comment"># one-hot</span></span><br><span class="line">            ones = torch.eye(logits.shape[self.dim]).to(targets.device)</span><br><span class="line">            targets = ones.index_select(<span class="number">0</span>, targets)</span><br><span class="line">        </span><br><span class="line">        max_logit = logits.<span class="built_in">max</span>()</span><br><span class="line">        exp_sum = (logits - max_logit).exp().<span class="built_in">sum</span>(dim=self.dim, keepdim=<span class="literal">True</span>)</span><br><span class="line">        log_softmax = logits - max_logit - exp_sum.log()</span><br><span class="line"></span><br><span class="line">        xent = - (targets * log_softmax).<span class="built_in">sum</span>()</span><br><span class="line">        </span><br><span class="line">        <span class="keyword">if</span> self.mean:</span><br><span class="line">            xent /= logits.shape[<span class="number">0</span>]</span><br><span class="line">        </span><br><span class="line">        <span class="keyword">return</span> xent</span><br></pre></td></tr></table></figure><hr>]]></content>
       
       
       <categories>
@@ -168,7 +168,7 @@
       <link href="/posts/1b0927de.html"/>
       <url>/posts/1b0927de.html</url>
       
-        <content type="html"><![CDATA[<h3 id="基础功能"><a href="#基础功能" class="headerlink" title="基础功能"></a>基础功能</h3>  <figure class="highlight sh"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br></pre></td><td class="code"><pre><span class="line">npm config <span class="built_in">set</span> registry https://registry.npm.taobao.org</span><br><span class="line">npm install hexo-cli -g</span><br><span class="line"><span class="built_in">mkdir</span> blog &amp;&amp; <span class="built_in">cd</span> blog</span><br><span class="line">hexo init</span><br><span class="line">npm install hexo-server --save</span><br><span class="line">npm install hexo-deployer-git --save</span><br></pre></td></tr></table></figure><h3 id="克隆source文件"><a href="#克隆source文件" class="headerlink" title="克隆source文件"></a>克隆source文件</h3>  <figure class="highlight sh"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br></pre></td><td class="code"><pre><span class="line"><span class="built_in">rm</span> -rf <span class="built_in">source</span></span><br><span class="line"><span class="built_in">rm</span> -rf scaffolds</span><br><span class="line">git <span class="built_in">clone</span> git@github.com:yqi96/yqi96.github.io.git ./tmp</span><br><span class="line"><span class="built_in">cp</span> -r tmp/* . &amp;&amp; <span class="built_in">rm</span> -rf tmp</span><br><span class="line">git submodule update --init --recursive</span><br></pre></td></tr></table></figure><h3 id="主题"><a href="#主题" class="headerlink" title="主题"></a>主题</h3>  <figure class="highlight sh"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br></pre></td><td class="code"><pre><span class="line"><span class="comment"># git clone https://github.com/tufu9441/maupassant-hexo.git themes/maupassant</span></span><br><span class="line">npm install hexo-renderer-pug --save</span><br><span class="line">npm install hexo-renderer-sass-next --save</span><br></pre></td></tr></table></figure><h3 id="页面显示"><a href="#页面显示" class="headerlink" title="页面显示"></a>页面显示</h3>  <figure class="highlight sh"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br></pre></td><td class="code"><pre><span class="line">npm install hexo-generator-index --save</span><br><span class="line">npm install hexo-generator-archive --save</span><br><span class="line">npm install hexo-generator-category --save</span><br><span class="line">npm install hexo-generator-tag --save</span><br><span class="line">npm install hexo-generator-search --save</span><br><span class="line"><span class="comment"># npm install hexo-asset-image --save</span></span><br></pre></td></tr></table></figure><h3 id="唯一链接"><a href="#唯一链接" class="headerlink" title="唯一链接"></a>唯一链接</h3>  <figure class="highlight sh"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br></pre></td><td class="code"><pre><span class="line">npm install hexo-abbrlink --save</span><br><span class="line">npm install https://github.com/foreveryang321/hexo-asset-image.git --save</span><br></pre></td></tr></table></figure><h3 id="备忘"><a href="#备忘" class="headerlink" title="备忘"></a>备忘</h3><ul><li>兼容<a href="https://github.com/Rozbo/hexo-abbrlink">hexo-abbrlink</a>的<a href="https://github.com/foreveryang321/hexo-asset-image">hexo-asset-image</a></li></ul><hr>]]></content>
+        <content type="html"><![CDATA[<h3 id="基础功能"><a href="#基础功能" class="headerlink" title="基础功能"></a>基础功能</h3>  <figure class="highlight sh"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br></pre></td><td class="code"><pre><span class="line">npm config <span class="built_in">set</span> registry https://registry.npm.taobao.org</span><br><span class="line">npm install hexo-cli -g</span><br><span class="line"><span class="built_in">mkdir</span> blog &amp;&amp; <span class="built_in">cd</span> blog</span><br><span class="line">hexo init</span><br><span class="line">npm install hexo-server --save</span><br><span class="line">npm install hexo-deployer-git --save</span><br></pre></td></tr></table></figure><h3 id="克隆source文件"><a href="#克隆source文件" class="headerlink" title="克隆source文件"></a>克隆source文件</h3>  <figure class="highlight sh"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br></pre></td><td class="code"><pre><span class="line"><span class="built_in">rm</span> -rf <span class="built_in">source</span></span><br><span class="line"><span class="built_in">rm</span> -rf scaffolds</span><br><span class="line">git <span class="built_in">clone</span> git@github.com:yqi96/yqi96.github.io.git ./tmp</span><br><span class="line"><span class="built_in">cp</span> -r tmp/* . &amp;&amp; <span class="built_in">rm</span> -rf tmp</span><br><span class="line">git submodule update --init --recursive</span><br></pre></td></tr></table></figure><h3 id="主题"><a href="#主题" class="headerlink" title="主题"></a>主题</h3>  <figure class="highlight sh"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br></pre></td><td class="code"><pre><span class="line"><span class="comment"># git clone https://github.com/tufu9441/maupassant-hexo.git themes/maupassant</span></span><br><span class="line">npm install hexo-renderer-pug --save</span><br><span class="line">npm install hexo-renderer-sass-next --save</span><br></pre></td></tr></table></figure><h3 id="页面显示"><a href="#页面显示" class="headerlink" title="页面显示"></a>页面显示</h3>  <figure class="highlight sh"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br></pre></td><td class="code"><pre><span class="line">npm install hexo-generator-index --save</span><br><span class="line">npm install hexo-generator-archive --save</span><br><span class="line">npm install hexo-generator-category --save</span><br><span class="line">npm install hexo-generator-tag --save</span><br><span class="line">npm install hexo-generator-search --save</span><br><span class="line"><span class="comment"># npm install hexo-asset-image --save</span></span><br></pre></td></tr></table></figure><h3 id="公式"><a href="#公式" class="headerlink" title="公式"></a>公式</h3><p>  主体的_config.yml文件开启mathjax支持，node_modules\kramed\lib\rules\inline.js文件替换以下两行<br>  <figure class="highlight js"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br></pre></td><td class="code"><pre><span class="line"><span class="comment">//  escape: /^\\([\\`*&#123;&#125;\[\]()#$+\-.!_&gt;])/,</span></span><br><span class="line"><span class="attr">escape</span>: <span class="regexp">/^\\([`*\[\]()#$+\-.!_&gt;])/</span></span><br><span class="line"><span class="comment">//  em: /^\b_((?:__|[\s\S])+?)_\b|^\*((?:\*\*|[\s\S])+?)\*(?!\*)/,</span></span><br><span class="line"><span class="attr">em</span>: <span class="regexp">/^\*((?:\*\*|[\s\S])+?)\*(?!\*)/</span></span><br></pre></td></tr></table></figure></p><h3 id="唯一链接"><a href="#唯一链接" class="headerlink" title="唯一链接"></a>唯一链接</h3>  <figure class="highlight sh"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br></pre></td><td class="code"><pre><span class="line">npm install hexo-abbrlink --save</span><br><span class="line">npm install https://github.com/foreveryang321/hexo-asset-image.git --save</span><br></pre></td></tr></table></figure><h3 id="备忘"><a href="#备忘" class="headerlink" title="备忘"></a>备忘</h3><ul><li>兼容<a href="https://github.com/Rozbo/hexo-abbrlink">hexo-abbrlink</a>的<a href="https://github.com/foreveryang321/hexo-asset-image">hexo-asset-image</a></li></ul><hr>]]></content>
       
       
       <categories>
@@ -205,9 +205,9 @@
       
         <tags>
             
-            <tag> light-weight </tag>
-            
             <tag> ICCV </tag>
+            
+            <tag> light-weight </tag>
             
             <tag> backbone </tag>
             
@@ -224,7 +224,7 @@
       <link href="/posts/edc10435.html"/>
       <url>/posts/edc10435.html</url>
       
-        <content type="html"><![CDATA[<script type="text/javascript" src="https://cdn.mathjax.org/mathjax/latest/MathJax.js?config=TeX-AMS-MML_HTMLorMML"></script><h3 id="问题"><a href="#问题" class="headerlink" title="问题"></a>问题</h3><ul><li>ResNet型密集聚合（+）：聚合后的特征不可分解，深层特征稀释或破坏浅层特征</li><li>DenseNet型密集聚合（concat）：参数以\(O(N^2)\)增加，消耗大量参数和运算来处理同一块特征</li></ul><h3 id="方案"><a href="#方案" class="headerlink" title="方案"></a>方案</h3><ul><li>保留短梯度路径（skip connection）的优势，但避免类ResNet、DenseNet的稠密聚合</li><li>\(y<em>l=F_l(\bigotimes(y</em>{l-c^0},y<em>{l-c^1},y</em>{l-c^2}…y_{l-c^k}))\)</li></ul><p><img src="/posts/edc10435/SparseNet.png" alt></p><h3 id="相关："><a href="#相关：" class="headerlink" title="相关："></a>相关：</h3><ul><li><a href="http://blinging/posts/8a14a4e3.html">PRN</a></li><li><a href="http://blinging/posts/b956e9d5.html">CSPNet</a></li></ul><blockquote><p>@InProceedings{sparsenet,<br> author={Zhu, Ligeng and Deng, Ruizhi and Maire, Michael and Deng, Zhiwei and Mori, Greg and Tan, Ping},<br> title={Sparsely Aggregated Convolutional Networks},<br> booktitle={European Conference on Computer Vision},<br> year={2018},<br> pages={192—208},<br> pdf={<code>https://openaccess.thecvf.com/content_ECCV_2018/papers/Ligeng_Zhu_Sparsely_Aggregated_Convolutional_ECCV_2018_paper.pdf</code>}}</p></blockquote><hr>]]></content>
+        <content type="html"><![CDATA[<script type="text/javascript" src="https://cdn.mathjax.org/mathjax/latest/MathJax.js?config=TeX-AMS-MML_HTMLorMML"></script><h3 id="问题"><a href="#问题" class="headerlink" title="问题"></a>问题</h3><ul><li>ResNet型密集聚合（+）：聚合后的特征不可分解，深层特征稀释或破坏浅层特征</li><li>DenseNet型密集聚合（concat）：参数以\(O(N^2)\)增加，消耗大量参数和运算来处理同一块特征</li></ul><h3 id="方案"><a href="#方案" class="headerlink" title="方案"></a>方案</h3><ul><li>保留短梯度路径（skip connection）的优势，但避免类ResNet、DenseNet的稠密聚合</li><li>\(y_l=F_l(\bigotimes(y_{l-c^0},y_{l-c^1},y_{l-c^2}…y_{l-c^k}))\)</li></ul><p><img src="/posts/edc10435/SparseNet.png" alt></p><h3 id="相关："><a href="#相关：" class="headerlink" title="相关："></a>相关：</h3><ul><li><a href="http://blinging/posts/8a14a4e3.html">PRN</a></li><li><a href="http://blinging/posts/b956e9d5.html">CSPNet</a></li></ul><blockquote><p>@InProceedings{sparsenet,<br> author={Zhu, Ligeng and Deng, Ruizhi and Maire, Michael and Deng, Zhiwei and Mori, Greg and Tan, Ping},<br> title={Sparsely Aggregated Convolutional Networks},<br> booktitle={European Conference on Computer Vision},<br> year={2018},<br> pages={192—208},<br> pdf={<code>https://openaccess.thecvf.com/content_ECCV_2018/papers/Ligeng_Zhu_Sparsely_Aggregated_Convolutional_ECCV_2018_paper.pdf</code>}}</p></blockquote><hr>]]></content>
       
       
       <categories>
@@ -265,11 +265,11 @@
       
         <tags>
             
-            <tag> fusion </tag>
+            <tag> detection </tag>
             
             <tag> CVPR </tag>
             
-            <tag> detection </tag>
+            <tag> fusion </tag>
             
             <tag> neck </tag>
             
@@ -296,9 +296,9 @@
       
         <tags>
             
-            <tag> CVPR </tag>
-            
             <tag> light-weight </tag>
+            
+            <tag> CVPR </tag>
             
             <tag> backbone </tag>
             
@@ -354,9 +354,9 @@
       
         <tags>
             
-            <tag> detection </tag>
-            
             <tag> ICCV </tag>
+            
+            <tag> detection </tag>
             
         </tags>
       
@@ -437,9 +437,9 @@
       
         <tags>
             
-            <tag> detection </tag>
-            
             <tag> ICCV </tag>
+            
+            <tag> detection </tag>
             
             <tag> scratch </tag>
             
@@ -466,8 +466,6 @@
       
         <tags>
             
-            <tag> loss </tag>
-            
             <tag> ECCV </tag>
             
             <tag> classification </tag>
@@ -475,6 +473,8 @@
             <tag> attribute </tag>
             
             <tag> attention </tag>
+            
+            <tag> loss </tag>
             
             <tag> Visual Cognition </tag>
             
@@ -532,9 +532,9 @@
       
         <tags>
             
-            <tag> detection </tag>
-            
             <tag> ICCV </tag>
+            
+            <tag> detection </tag>
             
             <tag> aerial </tag>
             
@@ -561,13 +561,13 @@
       
         <tags>
             
-            <tag> detection </tag>
+            <tag> ICCV </tag>
             
             <tag> light-weight </tag>
             
-            <tag> two-stage </tag>
+            <tag> detection </tag>
             
-            <tag> ICCV </tag>
+            <tag> two-stage </tag>
             
             <tag> backbone </tag>
             
@@ -596,13 +596,13 @@
       
         <tags>
             
-            <tag> detection </tag>
-            
-            <tag> light-weight </tag>
-            
             <tag> ICCV </tag>
             
             <tag> upsample </tag>
+            
+            <tag> light-weight </tag>
+            
+            <tag> detection </tag>
             
         </tags>
       
@@ -627,13 +627,13 @@
       
         <tags>
             
-            <tag> fusion </tag>
-            
-            <tag> NeurIPS </tag>
-            
             <tag> detection </tag>
             
             <tag> backbone </tag>
+            
+            <tag> fusion </tag>
+            
+            <tag> NeurIPS </tag>
             
         </tags>
       
@@ -658,13 +658,13 @@
       
         <tags>
             
-            <tag> CVPR </tag>
-            
             <tag> detection </tag>
             
-            <tag> two-stage </tag>
+            <tag> CVPR </tag>
             
             <tag> cascade </tag>
+            
+            <tag> two-stage </tag>
             
         </tags>
       
@@ -689,9 +689,9 @@
       
         <tags>
             
-            <tag> detection </tag>
-            
             <tag> ICCV </tag>
+            
+            <tag> detection </tag>
             
             <tag> scale </tag>
             
