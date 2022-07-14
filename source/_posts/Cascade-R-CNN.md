@@ -36,5 +36,6 @@ description: <p></p>
 >  year={2018},
 >  pages={6154-6162},
 >  pdf={`http://openaccess.thecvf.com/content_cvpr_2018/papers/Cai_Cascade_R-CNN_Delving_CVPR_2018_paper.pdf`}}
+
 ---
 

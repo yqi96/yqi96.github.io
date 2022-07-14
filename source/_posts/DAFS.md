@@ -25,4 +25,5 @@ description: <p></p>
 >  year={2019},
 >  pages={6608-6617},
 >  pdf={`http://openaccess.thecvf.com/content_ICCV_2019/papers/Li_Dynamic_Anchor_Feature_Selection_for_Single-Shot_Object_Detection_ICCV_2019_paper.pdf`}}
+
 ---

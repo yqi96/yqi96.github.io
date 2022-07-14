@@ -30,11 +30,12 @@ description: <p></p>
 - [https://github.com/open-mmlab/mmdetection](https://github.com/open-mmlab/mmdetection)
 
 >@INPROCEEDINGS{carafe,
->  author={J. {Wang} and K. {Chen} and R. {Xu} and Z. {Liu} and C. C. {Loy} and D. {Lin}},
->  booktitle={International Conference on Computer Vision}, 
->  title={CARAFE: Content-Aware ReAssembly of FEatures}, 
->  year={2019},
->  pages={3007-3016},
->  pdf={`http://openaccess.thecvf.com/content_ICCV_2019/papers/Wang_CARAFE_Content-Aware_ReAssembly_of_FEatures_ICCV_2019_paper.pdf`}}
+>author={J. {Wang} and K. {Chen} and R. {Xu} and Z. {Liu} and C. C. {Loy} and D. {Lin}},
+>booktitle={International Conference on Computer Vision}, 
+>title={CARAFE: Content-Aware ReAssembly of FEatures}, 
+>year={2019},
+>pages={3007-3016},
+>pdf={`http://openaccess.thecvf.com/content_ICCV_2019/papers/Wang_CARAFE_Content-Aware_ReAssembly_of_FEatures_ICCV_2019_paper.pdf`}}
+
 ---
 

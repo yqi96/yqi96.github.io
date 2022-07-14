@@ -20,4 +20,12 @@ description: <p></p>
 
 [https://github.com/yifan123/IC-Conv](https://github.com/yifan123/IC-Conv)
 
+
+> @article{liu2020inception,
+> title={Inception Convolution with Efficient Dilation Search},
+>  author={Liu, Jie and Li, Chuming and Liang, Feng and Lin, Chen and Sun, Ming and Yan, Junjie and Ouyang, Wanli and Xu, Dong},
+>  journal={arXiv preprint arXiv:2012.13587},
+>  year={2020}
+>  }
+
 ---

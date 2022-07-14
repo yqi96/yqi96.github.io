@@ -7,6 +7,7 @@ tags:
 abbrlink: 49a43533
 date: 2021-03-11 19:26:54
 description: <p></p>
+# mathjax: true
 ---
 <script type="text/javascript" src="https://cdn.mathjax.org/mathjax/latest/MathJax.js?config=TeX-AMS-MML_HTMLorMML"></script>
 

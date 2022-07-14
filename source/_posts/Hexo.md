@@ -31,7 +31,7 @@ description: <p></p>
   ```sh
   # git clone https://github.com/tufu9441/maupassant-hexo.git themes/maupassant
   npm install hexo-renderer-pug --save
-  npm install hexo-renderer-sass --save
+  npm install hexo-renderer-sass-next --save
   ```
 
 ### 页面显示
@@ -44,7 +44,16 @@ description: <p></p>
   npm install hexo-generator-search --save
   # npm install hexo-asset-image --save
   ```
+### 公式
 
+  主体的_config.yml文件开启mathjax支持，node_modules/kramed/lib/rules/inline.js文件替换以下两行
+  ```js
+  //  escape: /^\\([\\`*{}\[\]()#$+\-.!_>])/,
+  escape: /^\\([`*\[\]()#$+\-.!_>])/
+  //  em: /^\b_((?:__|[\s\S])+?)_\b|^\*((?:\*\*|[\s\S])+?)\*(?!\*)/,
+  em: /^\*((?:\*\*|[\s\S])+?)\*(?!\*)/
+  ```
+  
 ### 唯一链接
 
   ```sh
